@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Scene } from "@/components/art";
 import { useI18n } from "@/components/language";
-import { products, ui } from "@/lib/content";
+import { products } from "@/lib/content";
 
 export default function ProductsPage() {
   const { t } = useI18n();
