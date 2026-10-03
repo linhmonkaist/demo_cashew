@@ -9,8 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          DEFAULT: "#2fa949",
+          dark: "#1d6b32",
+          soft: "#e7f6eb",
+        },
+        cream: "#f6f3ee",
+        sand: "#f5f5f3",
+        ink: "#172016",
+        muted: "#5d675e",
       },
     },
   },
