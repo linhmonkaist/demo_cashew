@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { asset } from "@/lib/asset";
 import { useI18n } from "@/components/language";
 import { certClose, certIntro, certificates, commitments, intro, ui } from "@/lib/content";
 
@@ -11,12 +11,11 @@ export default function AboutPage() {
     <article className="mx-auto max-w-3xl px-4 py-12">
       <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{t({ vi: "Giới thiệu", en: "About" })}</p>
       <h1 className="mt-2 text-4xl font-bold">{t(ui.aboutTitle)}</h1>
-      <Image
-        src="/factory.jpg"
+      <img
+        src={asset("/factory.jpg")}
         alt={t({ vi: "Biển hiệu Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "Hoang Minh Cashew factory sign" })}
         width={1024}
         height={682}
-        priority
         className="mt-6 h-auto w-full rounded-3xl object-cover"
       />
       <p className="mt-6 text-base leading-8 text-ink/90">{t(intro)}</p>

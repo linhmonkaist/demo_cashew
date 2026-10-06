@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Scene } from "@/components/art";
+import { asset } from "@/lib/asset";
 import { NewsletterForm } from "@/components/forms";
 import {
   certificates,
@@ -32,12 +32,11 @@ export default function HomePage() {
               {t(ui.seeMore)}
             </Link>
           </div>
-          <Image
-            src="/factory.jpg"
+          <img
+            src={asset("/factory.jpg")}
             alt={t({ vi: "Biển hiệu Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "Hoang Minh Cashew factory sign" })}
             width={1024}
             height={682}
-            priority
             className="h-72 w-full rounded-3xl object-cover md:h-96"
           />
         </div>

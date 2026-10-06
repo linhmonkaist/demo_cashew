@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { asset } from "@/lib/asset";
 import { company, nav } from "@/lib/content";
 import { useI18n } from "./language";
 
@@ -22,12 +22,11 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-black/5 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
           <Link href="/" className="flex shrink-0 items-center" onClick={() => setOpen(false)}>
-            <Image
-              src="/logo-full.png"
+            <img
+              src={asset("/logo-full.png")}
               alt="Hoàng Minh Cashew"
               width={1100}
               height={1050}
-              priority
               className="h-16 w-auto sm:h-20"
             />
           </Link>
