@@ -10,8 +10,8 @@ const sans = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Quang Bảo Cashew",
-  description: "Công ty TNHH Xuất Nhập Khẩu Quang Bảo — gia công, sản xuất và xuất khẩu hạt điều.",
+  title: "Hoàng Minh Cashew",
+  description: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew — gia công, sản xuất và xuất khẩu hạt điều.",
 };
 
 export default function RootLayout({

@@ -3,8 +3,8 @@ export type Lang = "vi" | "en";
 export type Copy = { vi: string; en: string };
 
 export const company = {
-  name: "Công ty TNHH Xuất Nhập Khẩu Quang Bảo",
-  short: "Quang Bảo",
+  name: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew",
+  short: "Hoàng Minh Cashew",
   address:
     "Số 595, đường Thống Nhất, khu phố Phước Vĩnh, Phường Phước Bình, TP Đồng Nai, Việt Nam",
   address2: "Đường DT741, Tổ 1, Ấp Thuận Hòa 1, xã Thuận Lợi, Đồng Nai",
@@ -46,13 +46,13 @@ export const nav: {
 ];
 
 const intro = {
-  vi: "Công ty TNHH Xuất Nhập Khẩu Quang Bảo được thành lập vào ngày 03/06/2021, hoạt động trong lĩnh vực gia công, sản xuất và xuất khẩu hạt điều. Với tầm nhìn trở thành một trong những doanh nghiệp hàng đầu trong ngành hạt điều Việt Nam, Quang Bảo cam kết cung cấp các sản phẩm chất lượng cao, đáp ứng tiêu chuẩn xuất khẩu sang nhiều thị trường quốc tế. Công ty tập trung vào việc kiểm soát chất lượng nghiêm ngặt từ khâu thu mua nguyên liệu, gia công chế biến đến đóng gói, đảm bảo sản phẩm đạt tiêu chuẩn vệ sinh an toàn thực phẩm. Ngoài ra, Quang Bảo còn chú trọng đến việc tối ưu hóa quy trình sản xuất để nâng cao năng suất và giảm thiểu tác động đến môi trường. Với đội ngũ nhân sự giàu kinh nghiệm và hệ thống nhà xưởng hiện đại, công ty đã và đang khẳng định vị thế trong ngành hạt điều xuất khẩu, tạo dựng được sự tin tưởng từ khách hàng trong và ngoài nước.",
-  en: "Quang Bao Import Export Co., Ltd. was established on 3 June 2021. The company processes, manufactures, and exports cashew kernels. Quang Bao aims to be one of Vietnam’s leading cashew businesses and supplies products that meet export standards in many international markets. Quality is controlled from raw-material purchasing through processing and packing, so the kernels meet food-safety requirements. The company also works to improve productivity and reduce environmental impact. With an experienced team and a modern factory, Quang Bao has built trust with customers in Vietnam and abroad.",
+  vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew được thành lập vào ngày 03/06/2021, hoạt động trong lĩnh vực gia công, sản xuất và xuất khẩu hạt điều. Với tầm nhìn trở thành một trong những doanh nghiệp hàng đầu trong ngành hạt điều Việt Nam, Hoàng Minh Cashew cam kết cung cấp các sản phẩm chất lượng cao, đáp ứng tiêu chuẩn xuất khẩu sang nhiều thị trường quốc tế. Công ty tập trung vào việc kiểm soát chất lượng nghiêm ngặt từ khâu thu mua nguyên liệu, gia công chế biến đến đóng gói, đảm bảo sản phẩm đạt tiêu chuẩn vệ sinh an toàn thực phẩm. Ngoài ra, Hoàng Minh Cashew còn chú trọng đến việc tối ưu hóa quy trình sản xuất để nâng cao năng suất và giảm thiểu tác động đến môi trường. Với đội ngũ nhân sự giàu kinh nghiệm và hệ thống nhà xưởng hiện đại, công ty đã và đang khẳng định vị thế trong ngành hạt điều xuất khẩu, tạo dựng được sự tin tưởng từ khách hàng trong và ngoài nước.",
+  en: "Hoang Minh Cashew Import Export Co., Ltd. was established on 3 June 2021. The company processes, manufactures, and exports cashew kernels. Hoang Minh Cashew aims to be one of Vietnam’s leading cashew businesses and supplies products that meet export standards in many international markets. Quality is controlled from raw-material purchasing through processing and packing, so the kernels meet food-safety requirements. The company also works to improve productivity and reduce environmental impact. With an experienced team and a modern factory, Hoang Minh Cashew has built trust with customers in Vietnam and abroad.",
 };
 
 const certIntro = {
-  vi: "Với mục tiêu mang đến những sản phẩm an toàn, chất lượng, Quang Bảo đã đạt được các chứng nhận quan trọng trong ngành thực phẩm, bao gồm:",
-  en: "To deliver safe, high-quality products, Quang Bao holds these important food-industry certificates:",
+  vi: "Với mục tiêu mang đến những sản phẩm an toàn, chất lượng, Hoàng Minh Cashew đã đạt được các chứng nhận quan trọng trong ngành thực phẩm, bao gồm:",
+  en: "To deliver safe, high-quality products, Hoang Minh Cashew holds these important food-industry certificates:",
 };
 
 export const certificates: { title: string; body: Copy }[] = [
@@ -81,8 +81,8 @@ export const certificates: { title: string; body: Copy }[] = [
 
 export const commitments: Copy[] = [
   {
-    vi: "Quy trình sản xuất hiện đại: Quang Bảo áp dụng công nghệ tiên tiến và quy trình kiểm soát chất lượng nghiêm ngặt từ khâu chọn lựa nguyên liệu, gia công, chế biến đến đóng gói.",
-    en: "Modern production: Quang Bao uses advanced technology and strict quality control from raw-material selection through processing and packing.",
+    vi: "Quy trình sản xuất hiện đại: Hoàng Minh Cashew áp dụng công nghệ tiên tiến và quy trình kiểm soát chất lượng nghiêm ngặt từ khâu chọn lựa nguyên liệu, gia công, chế biến đến đóng gói.",
+    en: "Modern production: Hoang Minh Cashew uses advanced technology and strict quality control from raw-material selection through processing and packing.",
   },
   {
     vi: "Cam kết bền vững: Không ngừng nâng cao chất lượng sản phẩm, tối ưu hóa quy trình sản xuất và đảm bảo trách nhiệm với môi trường.",
@@ -91,8 +91,8 @@ export const commitments: Copy[] = [
 ];
 
 export const certClose = {
-  vi: "Với nền tảng vững chắc và những chứng nhận quốc tế, Công ty TNHH XNK Quang Bảo cam kết mang đến sản phẩm hạt điều đạt chuẩn chất lượng toàn cầu, góp phần nâng tầm giá trị hạt điều Việt Nam trên thị trường quốc tế.",
-  en: "With that foundation and international certificates, Quang Bao supplies cashew that meets global quality standards and raises the value of Vietnamese cashew on the world market.",
+  vi: "Với nền tảng vững chắc và những chứng nhận quốc tế, Công ty TNHH XNK Hoàng Minh Cashew cam kết mang đến sản phẩm hạt điều đạt chuẩn chất lượng toàn cầu, góp phần nâng tầm giá trị hạt điều Việt Nam trên thị trường quốc tế.",
+  en: "With that foundation and international certificates, Hoang Minh Cashew supplies cashew that meets global quality standards and raises the value of Vietnamese cashew on the world market.",
 };
 
 export const markets: { region: Copy; detail: Copy }[] = [
@@ -127,8 +127,8 @@ export const markets: { region: Copy; detail: Copy }[] = [
 ];
 
 export const marketIntro = {
-  vi: "Từ khi thành lập, Quang Bảo đã nhanh chóng chiếm lĩnh nhiều thị trường quan trọng trên toàn cầu, đặc biệt là các khu vực đòi hỏi tiêu chuẩn chất lượng cao như:",
-  en: "Since it was founded, Quang Bao has entered important markets around the world, especially regions that demand high quality standards:",
+  vi: "Từ khi thành lập, Hoàng Minh Cashew đã nhanh chóng chiếm lĩnh nhiều thị trường quan trọng trên toàn cầu, đặc biệt là các khu vực đòi hỏi tiêu chuẩn chất lượng cao như:",
+  en: "Since it was founded, Hoang Minh Cashew has entered important markets around the world, especially regions that demand high quality standards:",
 };
 
 const nutrition = {
@@ -417,7 +417,7 @@ export const ui = {
   quickView: { vi: "Xem nhanh", en: "Quick view" },
   contactPrice: { vi: "Giá bán: Liên hệ", en: "Price: on request" },
   kernels: { vi: "Hạt điều nhân", en: "Cashew kernels" },
-  kernelTag: { vi: "Hạt Điều Quang Bảo – chất lượng trong từng sản phẩm", en: "Quang Bao cashew – quality in every product" },
+  kernelTag: { vi: "Hạt Điều Hoàng Minh Cashew – chất lượng trong từng sản phẩm", en: "Hoang Minh Cashew – quality in every product" },
   packingTitle: { vi: "Bao bì đóng gói", en: "Packing" },
   certTitle: { vi: "Chứng nhận tiêu chuẩn", en: "Certificates" },
   newsletter: { vi: "Đăng ký nhận tin", en: "Newsletter" },
@@ -441,7 +441,7 @@ export const ui = {
   backNews: { vi: "Tất cả sự kiện", en: "All news" },
   founded: { vi: "Thành lập", en: "Founded" },
   marketsTitle: { vi: "Thị trường xuất khẩu", en: "Export markets" },
-  aboutTitle: { vi: "Giới thiệu về Công ty TNHH Xuất Nhập Khẩu Quang Bảo", en: "About Quang Bao Import Export Co., Ltd." },
+  aboutTitle: { vi: "Giới thiệu về Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "About Hoang Minh Cashew Import Export Co., Ltd." },
   letterTitle: { vi: "Thư ngỏ", en: "Open letter" },
   drying: { vi: "Quy trình phơi khô hạt điều", en: "Cashew drying process" },
   placeholder: { vi: "Ảnh minh họa", en: "Illustration" },

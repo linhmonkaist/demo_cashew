@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Scene } from "@/components/art";
 import { NewsletterForm } from "@/components/forms";
@@ -24,14 +25,21 @@ export default function HomePage() {
               {t({ vi: "Giới thiệu về", en: "Introduction to" })}
             </p>
             <h1 className="mt-2 text-4xl font-bold leading-tight text-ink md:text-5xl">
-              {t({ vi: "Công ty TNHH Xuất Nhập Khẩu Quang Bảo", en: "Quang Bao Import Export Co., Ltd." })}
+              {t({ vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "Hoang Minh Cashew Import Export Co., Ltd." })}
             </h1>
             <p className="mt-5 text-base leading-7 text-muted">{t(intro)}</p>
             <Link href="/gioi-thieu" className="mt-6 inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white">
               {t(ui.seeMore)}
             </Link>
           </div>
-          <Scene tone="factory" label={t(ui.placeholder)} className="h-72 w-full rounded-3xl md:h-96" />
+          <Image
+            src="/factory.jpg"
+            alt={t({ vi: "Biển hiệu Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "Hoang Minh Cashew factory sign" })}
+            width={1024}
+            height={682}
+            priority
+            className="h-72 w-full rounded-3xl object-cover md:h-96"
+          />
         </div>
       </section>
 

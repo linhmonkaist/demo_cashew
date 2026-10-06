@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -20,14 +21,15 @@ export function Shell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-white text-ink">
       <header className="sticky top-0 z-40 border-b border-black/5 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3">
-          <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <span className="grid h-11 w-11 place-items-center rounded-full bg-brand text-sm font-bold text-white">
-              QB
-            </span>
-            <span className="leading-tight">
-              <span className="block text-sm font-semibold text-brand-dark">Quang Bảo</span>
-              <span className="block text-xs text-muted">Cashew export</span>
-            </span>
+          <Link href="/" className="flex shrink-0 items-center" onClick={() => setOpen(false)}>
+            <Image
+              src="/logo-full.png"
+              alt="Hoàng Minh Cashew"
+              width={1100}
+              height={1050}
+              priority
+              className="h-16 w-auto sm:h-20"
+            />
           </Link>
 
           <nav className="ml-auto hidden items-center gap-1 lg:flex">

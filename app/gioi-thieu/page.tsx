@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { Scene } from "@/components/art";
 import { useI18n } from "@/components/language";
 import { certClose, certIntro, certificates, commitments, intro, ui } from "@/lib/content";
 
@@ -11,7 +11,14 @@ export default function AboutPage() {
     <article className="mx-auto max-w-3xl px-4 py-12">
       <p className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{t({ vi: "Giới thiệu", en: "About" })}</p>
       <h1 className="mt-2 text-4xl font-bold">{t(ui.aboutTitle)}</h1>
-      <Scene tone="factory" label={t(ui.placeholder)} className="mt-6 h-64 w-full rounded-3xl" />
+      <Image
+        src="/factory.jpg"
+        alt={t({ vi: "Biển hiệu Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "Hoang Minh Cashew factory sign" })}
+        width={1024}
+        height={682}
+        priority
+        className="mt-6 h-auto w-full rounded-3xl object-cover"
+      />
       <p className="mt-6 text-base leading-8 text-ink/90">{t(intro)}</p>
       <h2 className="mt-10 text-2xl font-semibold">{t(ui.certTitle)}</h2>
       <p className="mt-3 leading-7">{t(certIntro)}</p>
