@@ -56,7 +56,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          static_site_generator: next
+          # Do not set static_site_generator. That option cannot parse
+          # next.config.ts and replaces it with a blank config, which drops
+          # the image base path.
           enablement: true
       - name: Restore cache
         uses: actions/cache@v4
@@ -73,6 +75,7 @@ jobs:
       - name: Build with Next.js
         env:
           GITHUB_PAGES: "true"
+          NEXT_PUBLIC_BASE_PATH: "/demo_cashew"
         run: ${{ steps.detect-package-manager.outputs.runner }} next build && touch ./out/.nojekyll
       - name: Ensure public files are included
         run: cp -r public/. .next/public || echo "No public folder found"
