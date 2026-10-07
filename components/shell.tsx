@@ -138,7 +138,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
               {t({ vi: "Hoàn, đổi, trả", en: "Returns" })}
             </Link>
             <Link href="/bao-bi" className="mt-1 block text-sm text-white/80">
-              {t({ vi: "Bao bì đóng gói", en: "Packing" })}
+              {t({ vi: "Quy trình đóng gói", en: "Packing process" })}
             </Link>
           </div>
         </div>

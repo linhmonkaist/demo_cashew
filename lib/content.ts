@@ -8,9 +8,9 @@ export const company = {
   address:
     "Số 595, đường Thống Nhất, khu phố Phước Vĩnh, Phường Phước Bình, TP Đồng Nai, Việt Nam",
   address2: "Đường DT741, Tổ 1, Ấp Thuận Hòa 1, xã Thuận Lợi, Đồng Nai",
-  phone: "0974 99 11 77",
-  phoneRaw: "0974991177",
-  email: "cuongloanbd@gmail.com",
+  phone: "+84 388 133 333",
+  phoneRaw: "+84388133333",
+  email: "minhhoangcashew@gmail.com",
   founded: "03/06/2021",
 };
 
@@ -55,7 +55,7 @@ const certIntro = {
   en: "To deliver safe, high-quality products, Hoang Minh Cashew holds these important food-industry certificates:",
 };
 
-export const certificates: { title: string; body: Copy }[] = [
+export const certificates: { title: string; image?: string; body: Copy }[] = [
   {
     title: "BRC",
     body: {
@@ -72,9 +72,10 @@ export const certificates: { title: string; body: Copy }[] = [
   },
   {
     title: "FDA",
+    image: "/certificates/fda.png",
     body: {
-      vi: "FDA (Food and Drug Administration – Hoa Kỳ) – Được cấp phép xuất khẩu vào thị trường Mỹ, đáp ứng các tiêu chuẩn nghiêm ngặt về vệ sinh và an toàn thực phẩm.",
-      en: "FDA (U.S. Food and Drug Administration) registration allows export to the United States under strict hygiene and food-safety rules.",
+      vi: "Cơ sở đã đăng ký với FDA Hoa Kỳ, số đăng ký 10386741114, trạng thái VALID. Đăng ký này cho phép nhà máy sản xuất, đóng gói và lưu trữ thực phẩm để xuất khẩu vào thị trường Mỹ.",
+      en: "The facility is registered with the U.S. FDA, registration number 10386741114, status VALID. The registration covers manufacturing, packing, and holding food for export to the United States.",
     },
   },
 ];
@@ -160,6 +161,7 @@ export type Product = {
   slug: string;
   name: Copy;
   grade: string;
+  image: string;
   tone: "gold" | "cream" | "green" | "split";
   summary: Copy;
   detail: Copy;
@@ -181,6 +183,7 @@ export const products: Product[] = [
     slug: "hat-dieu-ws",
     name: { vi: "Hạt Điều WS", en: "WS Cashew" },
     grade: "WS",
+    image: "/products/ws.jpg",
     tone: "split",
     summary: {
       vi: "Nhân trắng vỡ đôi, dùng cho chế biến và thực phẩm cao cấp.",
@@ -200,6 +203,7 @@ export const products: Product[] = [
     slug: "hat-dieu-ww240",
     name: { vi: "Hạt Điều WW240", en: "WW240 Cashew" },
     grade: "WW240",
+    image: "/products/ww240.jpg",
     tone: "cream",
     summary: {
       vi: "Nhân trắng nguyên hạt, cỡ phổ biến cho xuất khẩu và chế biến.",
@@ -220,6 +224,7 @@ export const products: Product[] = [
     slug: "hat-dieu-ww210",
     name: { vi: "Hạt Điều WW210", en: "WW210 Cashew" },
     grade: "WW210",
+    image: "/products/ww210.jpg",
     tone: "gold",
     summary: {
       vi: "Nhân trắng nguyên hạt cỡ lớn, phù hợp thực phẩm cao cấp.",
@@ -240,6 +245,7 @@ export const products: Product[] = [
     slug: "hat-dieu-ww180",
     name: { vi: "Hạt Điều WW180", en: "WW180 Cashew" },
     grade: "WW180",
+    image: "/products/ww180.jpg",
     tone: "green",
     summary: {
       vi: "Cấp nguyên hạt lớn nhất, thường được gọi là King of Cashew.",
@@ -386,18 +392,66 @@ export const articles: {
   },
 ];
 
-export const packaging = [
-  {
-    slug: "dong-tin",
-    name: { vi: "Đóng tin", en: "Tin packing" },
-    body: { vi: "Nội dung đang cập nhật.", en: "Content is being updated." },
+export const packingProcess = {
+  lead: {
+    vi: "Trước khi một lô hàng rời nhà máy, từng hạt điều đi qua quy trình đóng gói được kiểm soát từ khâu chọn tay đến lúc niêm phong kiện. Chúng tôi giữ vệ sinh, an toàn thực phẩm và sự đồng đều của lô bằng người chọn hạt và bằng máy móc hiện đại.",
+    en: "Before a lot leaves the factory, every kernel goes through a controlled packing process, from hand selection to the sealed carton. Hygiene, food safety, and an even lot are kept by careful selectors and modern machinery.",
   },
-  {
-    slug: "dong-pe",
-    name: { vi: "Đóng PE", en: "PE packing" },
-    body: { vi: "Nội dung đang cập nhật.", en: "Content is being updated." },
+  close: {
+    vi: "Đây là cách Hoàng Minh Cashew giữ chất lượng đến bước cuối: hạt được chọn bằng tay, được kiểm tra trên máy, được đóng thành khối và được niêm phong kèm nhãn lô. Nếu quý khách cần khối lượng thùng hoặc quy cách theo hợp đồng, hãy liên hệ để chúng tôi chốt trước khi đóng hàng.",
+    en: "This is how Hoang Minh Cashew carries quality through to the last step: kernels are selected by hand, checked on the machine, packed into a firm block, and sealed with a lot label. If you need a carton weight or a packing spec for your contract, contact us before the lot is packed.",
   },
-];
+  steps: [
+    {
+      image: "/process/01-select.jpg",
+      title: { vi: "Chọn từng hạt trước khi đóng gói", en: "Each kernel is selected before packing" },
+      body: {
+        vi: "Trên băng chuyền, từng nhân điều được nhìn và nhặt bằng tay. Công nhân mang lưới trùm đầu, khẩu trang và găng tay. Hạt vỡ, hạt xỉn màu hoặc hạt không đạt được tách riêng, để lô hàng sạch và đều trước khi vào máy.",
+        en: "On the belt, every kernel is looked at and picked by hand. Selectors wear hairnets, masks, and gloves. Broken, dull, or off-spec nuts are taken out, so the lot is clean and even before it reaches the machines.",
+      },
+    },
+    {
+      image: "/process/02-line.jpg",
+      title: { vi: "Đưa hạt thành phẩm vào dây chuyền", en: "Finished kernels enter the line" },
+      body: {
+        vi: "Hạt đã chọn được băng tải đưa lên hệ thống máy inox trong phòng kín. Từ đây hạt đi theo dây chuyền, hạn chế bụi, và được chuẩn bị cho bước kiểm tra tiếp theo trước khi đóng gói.",
+        en: "Selected kernels travel up a conveyor into the stainless-steel line inside a closed room. They move as one flow, with less dust, and are prepared for the next check before packing.",
+      },
+    },
+    {
+      image: "/process/03-xray.jpg",
+      title: { vi: "Sàng lọc thêm bằng máy X-ray", en: "Screened again by X-ray" },
+      body: {
+        vi: "Trước khi vào bao, hạt đi qua hệ thống soi X-ray. Máy đọc từng hạt và chỉ cho lô đi tiếp khi kết quả đạt. Đây là lớp kiểm tra thêm để phát hiện dị vật và giữ an toàn thực phẩm.",
+        en: "Before bagging, kernels pass through an X-ray inspection system. The machine reads the nuts and lets the lot continue only when the result is acceptable. This extra check looks for foreign matter and protects food safety.",
+      },
+    },
+    {
+      image: "/process/04-fill.jpg",
+      title: { vi: "Đưa hạt vào bao trên máy đóng", en: "Kernels are filled into the pack" },
+      body: {
+        vi: "Hạt từ phễu đi xuống bao theo dòng ổn định. Công nhân theo sát miệng bao, chỉnh dòng hạt và không để hạt rơi ra ngoài. Mỗi bao được chuẩn bị đúng khối lượng trước khi đóng kín.",
+        en: "Kernels drop from the hopper into the pack in a steady stream. An operator watches the mouth of the pack, guides the flow, and keeps nuts from spilling. Each pack is brought to the right weight before it is closed.",
+      },
+    },
+    {
+      image: "/process/05-pack.jpg",
+      title: { vi: "Đóng kín thành khối xuất khẩu", en: "Closed into an export block" },
+      body: {
+        vi: "Hạt được hút chặt thành khối trong bao lót thùng, đúng dạng hàng xuất khẩu. Khối hạt đều giúp thùng đầy, chắc và giữ phẩm chất trên đường đi xa. Thùng carton được chuẩn bị sẵn ngay cạnh máy.",
+        en: "Kernels are drawn tight into a block inside the carton liner, the form used for export. An even block fills the carton, keeps it firm, and protects quality on a long journey. Cartons are prepared beside the machine.",
+      },
+    },
+    {
+      image: "/process/06-seal.jpg",
+      title: { vi: "Niêm phong thùng và dán nhãn", en: "Cartons are sealed and labeled" },
+      body: {
+        vi: "Từng thùng được đóng nắp, dán nhãn lô và kiểm tra trước khi xếp chồng. Nhãn ghi loại hạt và ký hiệu bảo quản, để khách đối chiếu đúng kiện khi nhận hàng. Thùng đạt được xếp ngay ngắn, sẵn sàng xuất kho.",
+        en: "Each carton is closed, labeled with the lot, and checked before it is stacked. The label shows the grade and the handling marks, so the buyer can match the carton on arrival. Accepted cartons are stacked neatly and are ready to leave the warehouse.",
+      },
+    },
+  ],
+};
 
 export const policies: { slug: string; title: Copy; body: Copy }[] = [
   {
@@ -418,7 +472,8 @@ export const ui = {
   contactPrice: { vi: "Giá bán: Liên hệ", en: "Price: on request" },
   kernels: { vi: "Hạt điều nhân", en: "Cashew kernels" },
   kernelTag: { vi: "Hạt Điều Hoàng Minh Cashew – chất lượng trong từng sản phẩm", en: "Hoang Minh Cashew – quality in every product" },
-  packingTitle: { vi: "Bao bì đóng gói", en: "Packing" },
+  packingTitle: { vi: "Quy trình đóng gói", en: "Packing process" },
+  seeProcess: { vi: "Xem quy trình đóng gói", en: "See the packing process" },
   certTitle: { vi: "Chứng nhận tiêu chuẩn", en: "Certificates" },
   newsletter: { vi: "Đăng ký nhận tin", en: "Newsletter" },
   newsletterHint: {

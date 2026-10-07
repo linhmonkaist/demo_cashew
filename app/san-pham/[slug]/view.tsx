@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { Scene } from "@/components/art";
+import { asset } from "@/lib/asset";
 import { useI18n } from "@/components/language";
 import { productShared, products, ui } from "@/lib/content";
 
@@ -26,7 +26,13 @@ export default function ProductPage() {
     <article className="mx-auto max-w-3xl px-4 py-12">
       <p className="text-sm font-semibold text-brand-dark">{t(ui.contactPrice)}</p>
       <h1 className="mt-2 text-4xl font-bold">{t(product.name)}</h1>
-      <Scene tone={product.tone} label={t(product.name)} className="mt-6 h-72 w-full rounded-3xl" />
+      <img
+        src={asset(product.image)}
+        alt={t(product.name)}
+        width={540}
+        height={540}
+        className="mt-6 h-72 w-full rounded-3xl bg-white object-contain"
+      />
       <p className="mt-6 leading-8">{t(productShared.nutrition)}</p>
       <p className="mt-4 leading-8">{t(product.detail)}</p>
       <h2 className="mt-8 text-2xl font-semibold">{t(ui.process)}</h2>

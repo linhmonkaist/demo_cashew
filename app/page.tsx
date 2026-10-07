@@ -7,7 +7,7 @@ import { NewsletterForm } from "@/components/forms";
 import {
   certificates,
   intro,
-  packaging,
+  packingProcess,
   products,
   ui,
 } from "@/lib/content";
@@ -49,7 +49,13 @@ export default function HomePage() {
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {products.map((product) => (
               <Link key={product.slug} href={`/san-pham/${product.slug}`} className="overflow-hidden rounded-3xl bg-white shadow-sm">
-                <Scene tone={product.tone} label={t(product.name)} className="h-40 w-full" />
+                <img
+                  src={asset(product.image)}
+                  alt={t(product.name)}
+                  width={540}
+                  height={540}
+                  className="h-48 w-full bg-white object-cover"
+                />
                 <div className="p-4">
                   <h3 className="font-semibold">{t(product.name)}</h3>
                   <p className="mt-1 text-sm text-muted">{t(product.summary)}</p>
@@ -64,17 +70,19 @@ export default function HomePage() {
       <section>
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-center text-3xl font-bold">{t(ui.packingTitle)}</h2>
-          <p className="mt-2 text-center text-brand-dark">{t(ui.kernelTag)}</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {packaging.map((item) => (
-              <Link key={item.slug} href="/bao-bi" className="overflow-hidden rounded-3xl border border-black/5">
-                <Scene tone="pack" label={t(item.name)} className="h-44 w-full" />
-                <div className="p-5">
-                  <h3 className="text-xl font-semibold">{t(item.name)}</h3>
-                  <p className="mt-2 text-sm text-muted">{t(item.body)}</p>
-                </div>
+          <p className="mx-auto mt-3 max-w-3xl text-center leading-7 text-muted">{t(packingProcess.lead)}</p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {packingProcess.steps.map((step) => (
+              <Link key={step.image} href="/bao-bi" className="overflow-hidden rounded-3xl border border-black/5 bg-white">
+                <img src={asset(step.image)} alt={t(step.title)} width={1600} height={900} className="h-40 w-full object-cover" />
+                <p className="p-4 text-sm font-semibold">{t(step.title)}</p>
               </Link>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/bao-bi" className="inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white">
+              {t(ui.seeProcess)}
+            </Link>
           </div>
         </div>
       </section>
@@ -86,7 +94,11 @@ export default function HomePage() {
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {certificates.map((item) => (
               <Link key={item.title} href="/chung-nhan" className="rounded-3xl bg-white p-5 shadow-sm">
-                <Scene tone="cert" label={item.title} className="h-36 w-full rounded-2xl" />
+                {item.image ? (
+                  <img src={asset(item.image)} alt={item.title} width={1700} height={2200} className="h-44 w-full rounded-2xl bg-white object-cover object-top" />
+                ) : (
+                  <Scene tone="cert" label={item.title} className="h-36 w-full rounded-2xl" />
+                )}
                 <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-muted">{t(item.body)}</p>
               </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Scene } from "@/components/art";
+import { asset } from "@/lib/asset";
 import { useI18n } from "@/components/language";
 import { certClose, certIntro, certificates, commitments, ui } from "@/lib/content";
 
@@ -13,7 +14,11 @@ export default function CertificatesPage() {
       <div className="mt-6 space-y-4">
         {certificates.map((item) => (
           <section key={item.title} className="overflow-hidden rounded-3xl border border-black/5">
-            <Scene tone="cert" label={item.title} className="h-40 w-full" />
+            {item.image ? (
+              <img src={asset(item.image)} alt={item.title} width={1700} height={2200} className="w-full bg-white object-contain" />
+            ) : (
+              <Scene tone="cert" label={item.title} className="h-40 w-full" />
+            )}
             <p className="p-5 leading-7">{t(item.body)}</p>
           </section>
         ))}
