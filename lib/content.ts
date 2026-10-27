@@ -11,7 +11,7 @@ export const company = {
   phone: "+84 388 133 333",
   phoneRaw: "+84388133333",
   email: "minhhoangcashew@gmail.com",
-  founded: "03/06/2021",
+  founded: "24/12/2025",
 };
 
 export const nav: {
@@ -25,7 +25,6 @@ export const nav: {
     label: { vi: "Giới thiệu", en: "About" },
     children: [
       { href: "/gioi-thieu", label: { vi: "Giới thiệu công ty", en: "Company introduction" } },
-      { href: "/gioi-thieu/thu-ngo", label: { vi: "Thư ngỏ", en: "Open letter" } },
     ],
   },
   { href: "/linh-vuc-hoat-dong", label: { vi: "Lĩnh vực hoạt động", en: "Business" } },
@@ -41,13 +40,12 @@ export const nav: {
   },
   { href: "/thi-truong", label: { vi: "Thị trường", en: "Markets" } },
   { href: "/chung-nhan", label: { vi: "Chứng nhận", en: "Certificates" } },
-  { href: "/su-kien", label: { vi: "Sự kiện", en: "News" } },
   { href: "/lien-he", label: { vi: "Liên hệ", en: "Contact" } },
 ];
 
 const intro = {
-  vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew được thành lập vào ngày 03/06/2021, hoạt động trong lĩnh vực gia công, sản xuất và xuất khẩu hạt điều. Với tầm nhìn trở thành một trong những doanh nghiệp hàng đầu trong ngành hạt điều Việt Nam, Hoàng Minh Cashew cam kết cung cấp các sản phẩm chất lượng cao, đáp ứng tiêu chuẩn xuất khẩu sang nhiều thị trường quốc tế. Công ty tập trung vào việc kiểm soát chất lượng nghiêm ngặt từ khâu thu mua nguyên liệu, gia công chế biến đến đóng gói, đảm bảo sản phẩm đạt tiêu chuẩn vệ sinh an toàn thực phẩm. Ngoài ra, Hoàng Minh Cashew còn chú trọng đến việc tối ưu hóa quy trình sản xuất để nâng cao năng suất và giảm thiểu tác động đến môi trường. Với đội ngũ nhân sự giàu kinh nghiệm và hệ thống nhà xưởng hiện đại, công ty đã và đang khẳng định vị thế trong ngành hạt điều xuất khẩu, tạo dựng được sự tin tưởng từ khách hàng trong và ngoài nước.",
-  en: "Hoang Minh Cashew Import Export Co., Ltd. was established on 3 June 2021. The company processes, manufactures, and exports cashew kernels. Hoang Minh Cashew aims to be one of Vietnam’s leading cashew businesses and supplies products that meet export standards in many international markets. Quality is controlled from raw-material purchasing through processing and packing, so the kernels meet food-safety requirements. The company also works to improve productivity and reduce environmental impact. With an experienced team and a modern factory, Hoang Minh Cashew has built trust with customers in Vietnam and abroad.",
+  vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew được thành lập vào ngày 24/12/2025, hoạt động trong lĩnh vực gia công, sản xuất và xuất khẩu hạt điều. Với tầm nhìn trở thành một trong những doanh nghiệp hàng đầu trong ngành hạt điều Việt Nam, Hoàng Minh Cashew cam kết cung cấp các sản phẩm chất lượng cao, đáp ứng tiêu chuẩn xuất khẩu sang nhiều thị trường quốc tế. Công ty tập trung vào việc kiểm soát chất lượng nghiêm ngặt từ khâu thu mua nguyên liệu, gia công chế biến đến đóng gói, đảm bảo sản phẩm đạt tiêu chuẩn vệ sinh an toàn thực phẩm. Ngoài ra, Hoàng Minh Cashew còn chú trọng đến việc tối ưu hóa quy trình sản xuất để nâng cao năng suất và giảm thiểu tác động đến môi trường. Với đội ngũ nhân sự giàu kinh nghiệm và hệ thống nhà xưởng hiện đại, công ty đã và đang khẳng định vị thế trong ngành hạt điều xuất khẩu, tạo dựng được sự tin tưởng từ khách hàng trong và ngoài nước.",
+  en: "Hoang Minh Cashew Import Export Co., Ltd. was established on 24 December 2025. The company processes, manufactures, and exports cashew kernels. Hoang Minh Cashew aims to be one of Vietnam’s leading cashew businesses and supplies products that meet export standards in many international markets. Quality is controlled from raw-material purchasing through processing and packing, so the kernels meet food-safety requirements. The company also works to improve productivity and reduce environmental impact. With an experienced team and a modern factory, Hoang Minh Cashew has built trust with customers in Vietnam and abroad.",
 };
 
 const certIntro = {
@@ -57,17 +55,19 @@ const certIntro = {
 
 export const certificates: { title: string; image?: string; body: Copy }[] = [
   {
-    title: "BRC",
+    title: "BRCGS",
+    image: "/certificates/brcgs.png",
     body: {
-      vi: "BRC (British Retail Consortium) – Tiêu chuẩn toàn cầu về an toàn thực phẩm, đảm bảo sản phẩm đáp ứng yêu cầu của các nhà bán lẻ lớn trên thế giới.",
-      en: "BRC (British Retail Consortium) is a global food-safety standard. It shows the product meets the requirements of major retailers worldwide.",
+      vi: "Nhà máy đạt chứng nhận BRCGS Global Standard Food Safety Issue 9, hạng A, số chứng nhận VN26/00000492, mã nhà máy 10025068. Phạm vi gồm phân loại, tách vỏ, sấy, làm nguội, phân màu, hun trùng và hút chân không nhân hạt điều.",
+      en: "The factory holds BRCGS Global Standard Food Safety Issue 9, grade A, certificate VN26/00000492, site code 10025068. The scope covers grading, shelling, drying, cooling, colour sorting, fumigation, and vacuum packing of cashew kernels.",
     },
   },
   {
-    title: "HACCP",
+    title: "BRCGS Report",
+    image: "/certificates/brcgs-report.png",
     body: {
-      vi: "HACCP (Hazard Analysis and Critical Control Points) – Hệ thống quản lý an toàn thực phẩm giúp kiểm soát các mối nguy trong quá trình sản xuất.",
-      en: "HACCP (Hazard Analysis and Critical Control Points) is a food-safety system that controls hazards during production.",
+      vi: "Báo cáo đánh giá BRCGS của SGS, mã VN/HO/963347. Kết quả Certificated, hạng A.",
+      en: "The SGS BRCGS audit report, reference VN/HO/963347. The result is Certificated, grade A.",
     },
   },
   {
@@ -130,6 +130,11 @@ export const markets: { region: Copy; detail: Copy }[] = [
 export const marketIntro = {
   vi: "Từ khi thành lập, Hoàng Minh Cashew đã nhanh chóng chiếm lĩnh nhiều thị trường quan trọng trên toàn cầu, đặc biệt là các khu vực đòi hỏi tiêu chuẩn chất lượng cao như:",
   en: "Since it was founded, Hoang Minh Cashew has entered important markets around the world, especially regions that demand high quality standards:",
+};
+
+export const marketMapCaption = {
+  vi: "Màu xanh là những quốc gia Hoàng Minh Cashew đã xuất khẩu. Chấm tròn đánh dấu Singapore và Hong Kong.",
+  en: "Green marks the countries Hoang Minh Cashew has exported to. Dots mark Singapore and Hong Kong.",
 };
 
 const nutrition = {
@@ -305,93 +310,6 @@ export const business = {
   },
 };
 
-export const articles: {
-  slug: string;
-  date: string;
-  title: Copy;
-  excerpt: Copy;
-  paragraphs: Copy[];
-}[] = [
-  {
-    slug: "hat-dieu-phu-thuy",
-    date: "2026-04-20",
-    title: {
-      vi: "Hạt điều Phú Thủy – Ngon miệng, giàu dinh dưỡng, an toàn cho sức khỏe",
-      en: "Phu Thuy cashew – good taste, nutrition, and food safety",
-    },
-    excerpt: {
-      vi: "Với hương vị hấp dẫn, giá trị dinh dưỡng vượt trội và quy trình chế biến an toàn, hạt điều đáp ứng cả người tiêu dùng Việt Nam và tiêu chuẩn xuất khẩu.",
-      en: "With a strong flavor, high nutrition, and a safe process, the cashew serves Vietnamese consumers and export standards.",
-    },
-    paragraphs: [
-      {
-        vi: "Lựa chọn hạt điều sạch là chăm sóc sức khỏe bằng nguồn dinh dưỡng an toàn. Hành trình bắt đầu từ vùng điều Bình Phước: cơ sở tại huyện Đồng Phú hoạt động sản xuất từ năm 2019, và đến năm 2022 đầu tư thêm nhà máy khép kín.",
-        en: "Choosing clean cashew means choosing a safe source of nutrition. The original article follows cashew from Binh Phuoc: a Dong Phu base started production in 2019, and a closed-process factory was added in 2022.",
-      },
-      {
-        vi: "Nguyên liệu được thu hoạch từ vùng trồng uy tín tại Bình Phước, loại bỏ hạt hư và sâu mọt. Sau phân loại hạt thô, nhà máy bắn màu, sàng kích thước, hấp sấy đến độ ẩm khoảng 4,5%–5% để hạt giòn và thơm. Hạt còn được hun trùng để khử vi khuẩn.",
-        en: "Raw nuts are harvested from trusted farms in Binh Phuoc, and damaged or infested nuts are removed. After grading, the factory color-sorts, screens by size, and dries to about 4.5%–5% moisture for a crisp, fragrant kernel. Fumigation reduces harmful bacteria.",
-      },
-      {
-        vi: "Trước khi đóng gói, hạt đi qua máy X-ray, máy dò kim loại và hút chân không để vừa an toàn vừa bảo quản được lâu. Hạt điều cung cấp protein, đồng, canxi, magiê, sắt, phốt pho, kali, kẽm, vitamin E, K, B6, và không chứa cholesterol.",
-        en: "Before packing, kernels pass X-ray, metal detection, and vacuum sealing so they stay safe and keep longer. Cashew provides protein, copper, calcium, magnesium, iron, phosphorus, potassium, zinc, and vitamins E, K, and B6, with no cholesterol.",
-      },
-    ],
-  },
-  {
-    slug: "tac-dung-hat-dieu",
-    date: "2026-04-20",
-    title: {
-      vi: "Tác dụng của hạt điều – 8 lợi ích tốt cho sức khỏe bạn cần biết",
-      en: "Cashew benefits – 8 health benefits worth knowing",
-    },
-    excerpt: {
-      vi: "Hạt điều thơm ngon và giàu protein, chất xơ, vitamin và khoáng chất. Bài viết nêu 8 lợi ích thường được nhắc tới.",
-      en: "Cashew is fragrant and rich in protein, fiber, vitamins, and minerals. The article lists eight commonly cited benefits.",
-    },
-    paragraphs: [
-      {
-        vi: "Theo dữ liệu USDA, 28g hạt điều cung cấp khoảng 157 calo, 8,56g carbohydrate, 1,68g đường, 0,9g chất xơ và 5,17g protein. Hạt còn có chất béo không bão hòa và ít đường.",
-        en: "USDA data cited on the source page: 28g of cashew provides about 157 kcal, 8.56g carbohydrate, 1.68g sugar, 0.9g fiber, and 5.17g protein, plus unsaturated fat and little sugar.",
-      },
-      {
-        vi: "Tám lợi ích được nêu: hỗ trợ phòng ngừa ung thư nhờ chất chống oxy hóa; tăng miễn dịch nhờ kẽm; tốt cho tim mạch vì giảm LDL và triglyceride; ít đường nên hỗ trợ người quan tâm đến tiểu đường; vitamin E giúp da và tóc; phốt pho, vitamin K và canxi hỗ trợ răng và xương; protein và chất xơ tạo no khi ăn kiêng; magie hỗ trợ cơ, huyết áp và giấc ngủ.",
-        en: "Eight benefits are listed: antioxidant support; immunity from zinc; heart health by helping lower LDL and triglycerides; low sugar for people watching diabetes risk; vitamin E for skin and hair; phosphorus, vitamin K, and calcium for teeth and bones; protein and fiber for satiety; and magnesium for muscle, blood pressure, and sleep.",
-      },
-      {
-        vi: "Gợi ý dùng khoảng 28–30g mỗi ngày, chia 2–3 lần, không nên quá 100g. Nên ăn buổi sáng hoặc bữa phụ, hạn chế ăn sát giờ ngủ. Người tiểu đường nên ăn vừa phải và ưu tiên hạt không rang muối hoặc rang đường.",
-        en: "A suggested serving is about 28–30g a day, split into two or three times, and not more than 100g. Morning or a snack is better than eating just before sleep. People with diabetes should keep portions moderate and prefer unsalted, unsweetened kernels.",
-      },
-    ],
-  },
-  {
-    slug: "cach-chon-hat-dieu",
-    date: "2026-04-20",
-    title: {
-      vi: "Cách lựa chọn hạt điều ngon? Gợi ý địa chỉ cung cấp uy tín tại Đồng Nai",
-      en: "How to choose good cashew, and a trusted supplier in Dong Nai",
-    },
-    excerpt: {
-      vi: "Hạt điều ngon thì đều hạt, khô ráo, thơm nhẹ và giòn. Bài viết gợi ý cách nhìn, ngửi, nếm và chọn nơi bán.",
-      en: "Good cashew is even, dry, lightly fragrant, and crisp. The article explains how to look, smell, taste, and choose a seller.",
-    },
-    paragraphs: [
-      {
-        vi: "Hạt ngon thường đồng đều, cong tự nhiên, không gãy vụn, bề mặt khô, không bóng dầu. Màu vàng sáng hoặc vàng nhạt. Nâu đậm hoặc đốm đen có thể là cháy hoặc ẩm mốc. Mùi hôi dầu, ẩm mốc hoặc chua là dấu hiệu không nên dùng.",
-        en: "A good kernel is even, naturally curved, not shattered, and dry rather than oily. The color is bright or pale gold. Dark brown or black spots can mean scorching or mold. A rancid, musty, or sour smell means it should not be eaten.",
-      },
-      {
-        vi: "Khi ăn, hạt chuẩn giòn, béo bùi, không dai và không cứng quá. Nên ưu tiên hạt ít gia vị, không chất bảo quản lạ. Nhà cung cấp uy tín cần nguồn nguyên liệu rõ, quy trình được kiểm soát, giấy phép và đóng gói sạch.",
-        en: "When eaten, a proper kernel is crisp and naturally rich, not tough or overly hard. Lightly seasoned nuts without unknown preservatives are preferable. A trusted supplier has a clear raw-material source, a controlled process, licenses, and clean packing.",
-      },
-      {
-        vi: "Phần cuối bài giới thiệu nguồn cung tại Đồng Nai, có hun trùng, kiểm tra X-ray và hút chân không. Hạt bảo quản kín ở nơi khô mát khoảng 6–12 tháng. Công ty nhận đơn số lượng lớn. Giá được mô tả là phù hợp chất lượng, không chặt chém.",
-        en: "The article then points to a Dong Nai supplier using fumigation, X-ray inspection, and vacuum packing. Sealed kernels keep about 6–12 months in a cool, dry place. Bulk orders are accepted, and the price is described as fair for the quality.",
-      },
-    ],
-  },
-];
-
 export const packingProcess = {
   lead: {
     vi: "Trước khi một lô hàng rời nhà máy, từng hạt điều đi qua quy trình đóng gói được kiểm soát từ khâu chọn tay đến lúc niêm phong kiện. Chúng tôi giữ vệ sinh, an toàn thực phẩm và sự đồng đều của lô bằng người chọn hạt và bằng máy móc hiện đại.",
@@ -493,11 +411,9 @@ export const ui = {
   nutritionTitle: { vi: "Dinh dưỡng", en: "Nutrition" },
   specs: { vi: "Thông số", en: "Specifications" },
   related: { vi: "Sản phẩm khác", en: "Other products" },
-  backNews: { vi: "Tất cả sự kiện", en: "All news" },
   founded: { vi: "Thành lập", en: "Founded" },
   marketsTitle: { vi: "Thị trường xuất khẩu", en: "Export markets" },
   aboutTitle: { vi: "Giới thiệu về Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "About Hoang Minh Cashew Import Export Co., Ltd." },
-  letterTitle: { vi: "Thư ngỏ", en: "Open letter" },
   drying: { vi: "Quy trình phơi khô hạt điều", en: "Cashew drying process" },
   placeholder: { vi: "Ảnh minh họa", en: "Illustration" },
 };

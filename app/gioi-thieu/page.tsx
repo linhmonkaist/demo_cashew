@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { asset } from "@/lib/asset";
 import { useI18n } from "@/components/language";
 import { certClose, certIntro, certificates, commitments, intro, ui } from "@/lib/content";
@@ -36,9 +35,6 @@ export default function AboutPage() {
         ))}
       </ul>
       <p className="mt-6 leading-8">{t(certClose)}</p>
-      <Link href="/gioi-thieu/thu-ngo" className="mt-8 inline-flex text-sm font-semibold text-brand-dark underline">
-        {t(ui.letterTitle)}
-      </Link>
     </article>
   );
 }

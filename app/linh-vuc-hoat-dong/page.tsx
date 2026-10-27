@@ -1,6 +1,5 @@
 "use client";
 
-import { Scene } from "@/components/art";
 import { useI18n } from "@/components/language";
 import { business, dryingSteps, ui } from "@/lib/content";
 
@@ -12,7 +11,6 @@ export default function BusinessPage() {
         {t({ vi: "Lĩnh vực hoạt động", en: "Business" })}
       </p>
       <h1 className="mt-2 text-4xl font-bold">{t(business.title)}</h1>
-      <Scene tone="factory" label={t(ui.placeholder)} className="mt-6 h-64 w-full rounded-3xl" />
       <p className="mt-6 leading-8">{t(business.lead)}</p>
       <h2 className="mt-8 text-2xl font-semibold">{t(ui.drying)}</h2>
       <ol className="mt-4 space-y-3">

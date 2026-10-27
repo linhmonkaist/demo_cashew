@@ -91,11 +91,11 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-center text-3xl font-bold">{t(ui.certTitle)}</h2>
           <p className="mt-2 text-center text-brand-dark">{t(ui.kernelTag)}</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {certificates.map((item) => (
               <Link key={item.title} href="/chung-nhan" className="rounded-3xl bg-white p-5 shadow-sm">
                 {item.image ? (
-                  <img src={asset(item.image)} alt={item.title} width={1700} height={2200} className="h-44 w-full rounded-2xl bg-white object-cover object-top" />
+                  <img src={asset(item.image)} alt={item.title} width={1428} height={2022} className="h-64 w-full rounded-2xl bg-white object-contain" />
                 ) : (
                   <Scene tone="cert" label={item.title} className="h-36 w-full rounded-2xl" />
                 )}
