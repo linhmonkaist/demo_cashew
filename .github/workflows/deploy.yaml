@@ -73,9 +73,6 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        env:
-          GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: "/demo_cashew"
         run: ${{ steps.detect-package-manager.outputs.runner }} next build && touch ./out/.nojekyll
       - name: Ensure public files are included
         run: cp -r public/. .next/public || echo "No public folder found"
