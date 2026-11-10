@@ -15,7 +15,7 @@ export default function CertificatesPage() {
         {certificates.map((item) => (
           <section key={item.title} className="overflow-hidden rounded-3xl border border-black/5">
             {item.image ? (
-              <img src={asset(item.image)} alt={item.title} width={1700} height={2200} className="w-full bg-white object-contain" />
+              <img src={asset(item.image)} alt={item.title} width={1700} height={2200} className="max-h-[36rem] w-full bg-white object-contain" />
             ) : (
               <Scene tone="cert" label={item.title} className="h-40 w-full" />
             )}

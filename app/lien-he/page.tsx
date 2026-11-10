@@ -11,11 +11,11 @@ export default function ContactPage() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-2">
         <div>
           <h1 className="text-4xl font-bold text-brand-dark">{t({ vi: "Liên hệ", en: "Contact" })}</h1>
-          <h2 className="mt-6 text-2xl font-semibold">{company.name}</h2>
+          <h2 className="mt-6 text-2xl font-semibold">{t(company.name)}</h2>
           <dl className="mt-4 space-y-3 text-sm leading-6">
             <div>
               <dt className="font-semibold">{t(ui.address)}</dt>
-              <dd>{company.address}</dd>
+              <dd>{t(company.address)}</dd>
               <dd className="mt-1">{company.address2}</dd>
             </div>
             <div>

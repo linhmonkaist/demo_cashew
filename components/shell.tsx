@@ -24,7 +24,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <Link href="/" className="flex shrink-0 items-center" onClick={() => setOpen(false)}>
             <img
               src={asset("/logo-full.png")}
-              alt="Hoàng Minh Cashew"
+              alt={t(company.short)}
               width={1100}
               height={1050}
               className="h-16 w-auto sm:h-20"
@@ -43,7 +43,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
                   {t(item.label)}
                 </Link>
                 {item.children && (
-                  <div className="invisible absolute left-0 top-full z-20 min-w-56 rounded-2xl border border-black/5 bg-white p-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
+                  <div className="invisible absolute left-0 top-full z-20 max-h-[70vh] min-w-56 overflow-y-auto rounded-2xl border border-black/5 bg-white p-2 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
                     {item.children.map((child) => (
                       <Link key={child.href} href={child.href} className="block rounded-xl px-3 py-2 text-sm hover:bg-sand">
                         {t(child.label)}
@@ -116,8 +116,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <footer className="mt-16 bg-ink text-white">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="text-lg font-semibold">{company.name}</p>
-            <p className="mt-3 text-sm text-white/75">{company.address}</p>
+            <p className="text-lg font-semibold">{t(company.name)}</p>
+            <p className="mt-3 text-sm text-white/75">{t(company.address)}</p>
             <p className="mt-2 text-sm text-white/75">{company.address2}</p>
           </div>
           <div>
@@ -137,8 +137,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
             <Link href="/chinh-sach/doi-tra" className="mt-1 block text-sm text-white/80">
               {t({ vi: "Hoàn, đổi, trả", en: "Returns" })}
             </Link>
-            <Link href="/bao-bi" className="mt-1 block text-sm text-white/80">
-              {t({ vi: "Quy trình đóng gói", en: "Packing process" })}
+            <Link href="/quy-trinh-san-xuat" className="mt-1 block text-sm text-white/80">
+              {t({ vi: "Quy trình sản xuất", en: "Production process" })}
             </Link>
           </div>
         </div>

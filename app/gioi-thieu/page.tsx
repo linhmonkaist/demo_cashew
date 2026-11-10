@@ -2,7 +2,7 @@
 
 import { asset } from "@/lib/asset";
 import { useI18n } from "@/components/language";
-import { certClose, certIntro, certificates, commitments, intro, ui } from "@/lib/content";
+import { certClose, certIntro, certificates, commitments, factoryFacts, intro, ui } from "@/lib/content";
 
 export default function AboutPage() {
   const { t } = useI18n();
@@ -18,6 +18,15 @@ export default function AboutPage() {
         className="mt-6 h-auto w-full rounded-3xl object-cover"
       />
       <p className="mt-6 text-base leading-8 text-ink/90">{t(intro)}</p>
+      <h2 className="mt-10 text-2xl font-semibold">{t(ui.factoryTitle)}</h2>
+      <dl className="mt-4 overflow-hidden rounded-2xl border border-black/10">
+        {factoryFacts.map((fact) => (
+          <div key={fact.label.vi} className="grid grid-cols-2 border-b border-black/10 last:border-0">
+            <dt className="bg-sand px-4 py-3 text-sm font-medium">{t(fact.label)}</dt>
+            <dd className="px-4 py-3 text-sm">{t(fact.value)}</dd>
+          </div>
+        ))}
+      </dl>
       <h2 className="mt-10 text-2xl font-semibold">{t(ui.certTitle)}</h2>
       <p className="mt-3 leading-7">{t(certIntro)}</p>
       <ul className="mt-4 space-y-3">

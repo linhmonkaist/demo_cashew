@@ -3,15 +3,19 @@ export type Lang = "vi" | "en";
 export type Copy = { vi: string; en: string };
 
 export const company = {
-  name: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew",
-  short: "Hoàng Minh Cashew",
-  address:
-    "Số 595, đường Thống Nhất, khu phố Phước Vĩnh, Phường Phước Bình, TP Đồng Nai, Việt Nam",
+  name: {
+    vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew",
+    en: "Hoang Minh Cashew Import Export Co., Ltd.",
+  },
+  short: { vi: "Hoàng Minh Cashew", en: "Hoang Minh Cashew" },
+  address: {
+    vi: "Số 595, đường Thống Nhất, khu phố Phước Vĩnh, Phường Phước Bình, TP Đồng Nai, Việt Nam",
+    en: "595 Thong Nhat, Phuoc Vinh Quarter, Phuoc Binh Ward, Dong Nai, Vietnam",
+  },
   address2: "Đường DT741, Tổ 1, Ấp Thuận Hòa 1, xã Thuận Lợi, Đồng Nai",
   phone: "+84 388 133 333",
   phoneRaw: "+84388133333",
   email: "minhhoangcashew@gmail.com",
-  founded: "24/12/2025",
 };
 
 export const nav: {
@@ -27,15 +31,23 @@ export const nav: {
       { href: "/gioi-thieu", label: { vi: "Giới thiệu công ty", en: "Company introduction" } },
     ],
   },
-  { href: "/linh-vuc-hoat-dong", label: { vi: "Lĩnh vực hoạt động", en: "Business" } },
+  { href: "/quy-trinh-san-xuat", label: { vi: "Quy trình sản xuất", en: "Production process" } },
   {
     href: "/san-pham",
     label: { vi: "Sản phẩm", en: "Products" },
     children: [
-      { href: "/san-pham/hat-dieu-ws", label: { vi: "Hạt Điều WS", en: "WS Cashew" } },
-      { href: "/san-pham/hat-dieu-ww240", label: { vi: "Hạt Điều WW240", en: "WW240 Cashew" } },
-      { href: "/san-pham/hat-dieu-ww210", label: { vi: "Hạt Điều WW210", en: "WW210 Cashew" } },
-      { href: "/san-pham/hat-dieu-ww180", label: { vi: "Hạt Điều WW180", en: "WW180 Cashew" } },
+      { href: "/san-pham/hat-dieu-ww180", label: { vi: "Hạt điều WW180", en: "WW180" } },
+      { href: "/san-pham/hat-dieu-ww240", label: { vi: "Hạt điều WW240", en: "WW240" } },
+      { href: "/san-pham/hat-dieu-ww320", label: { vi: "Hạt điều WW320", en: "WW320" } },
+      { href: "/san-pham/hat-dieu-ww450", label: { vi: "Hạt điều WW450", en: "WW450" } },
+      { href: "/san-pham/hat-dieu-ws", label: { vi: "Hạt điều WS", en: "WS" } },
+      { href: "/san-pham/hat-dieu-lp", label: { vi: "Hạt điều LP", en: "LP" } },
+      { href: "/san-pham/hat-dieu-sp", label: { vi: "Hạt điều SP", en: "SP" } },
+      { href: "/san-pham/hat-dieu-bb", label: { vi: "Hạt điều BB", en: "BB" } },
+      { href: "/san-pham/hat-dieu-lbw", label: { vi: "Hạt điều LBW", en: "LBW" } },
+      { href: "/san-pham/hat-dieu-sw", label: { vi: "Hạt điều SW", en: "SW" } },
+      { href: "/san-pham/hat-dieu-sk1", label: { vi: "Hạt điều SK1", en: "SK1" } },
+      { href: "/san-pham/hat-dieu-rang", label: { vi: "Hạt điều rang", en: "Roasted cashew" } },
     ],
   },
   { href: "/thi-truong", label: { vi: "Thị trường", en: "Markets" } },
@@ -44,8 +56,8 @@ export const nav: {
 ];
 
 const intro = {
-  vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew được thành lập vào ngày 24/12/2025, hoạt động trong lĩnh vực gia công, sản xuất và xuất khẩu hạt điều. Với tầm nhìn trở thành một trong những doanh nghiệp hàng đầu trong ngành hạt điều Việt Nam, Hoàng Minh Cashew cam kết cung cấp các sản phẩm chất lượng cao, đáp ứng tiêu chuẩn xuất khẩu sang nhiều thị trường quốc tế. Công ty tập trung vào việc kiểm soát chất lượng nghiêm ngặt từ khâu thu mua nguyên liệu, gia công chế biến đến đóng gói, đảm bảo sản phẩm đạt tiêu chuẩn vệ sinh an toàn thực phẩm. Ngoài ra, Hoàng Minh Cashew còn chú trọng đến việc tối ưu hóa quy trình sản xuất để nâng cao năng suất và giảm thiểu tác động đến môi trường. Với đội ngũ nhân sự giàu kinh nghiệm và hệ thống nhà xưởng hiện đại, công ty đã và đang khẳng định vị thế trong ngành hạt điều xuất khẩu, tạo dựng được sự tin tưởng từ khách hàng trong và ngoài nước.",
-  en: "Hoang Minh Cashew Import Export Co., Ltd. was established on 24 December 2025. The company processes, manufactures, and exports cashew kernels. Hoang Minh Cashew aims to be one of Vietnam’s leading cashew businesses and supplies products that meet export standards in many international markets. Quality is controlled from raw-material purchasing through processing and packing, so the kernels meet food-safety requirements. The company also works to improve productivity and reduce environmental impact. With an experienced team and a modern factory, Hoang Minh Cashew has built trust with customers in Vietnam and abroad.",
+  vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew chuyên chế biến và xuất khẩu hạt điều. Với nhiều năm kinh nghiệm và cam kết theo tiêu chuẩn quốc tế, công ty cung cấp hạt điều cho các thị trường trên thế giới, đặt trọng tâm vào chất lượng, phát triển bền vững và sự hài lòng của khách hàng. Nhà máy rộng 3.000 m², dùng dây chuyền công nghệ để làm ra sản phẩm tươi, không chất bảo quản. Công suất cung ứng từ 500 đến 750 tấn mỗi tháng. Công nhân được đào tạo vận hành máy, kiểm soát chất lượng và tuân thủ an toàn, vệ sinh thực phẩm.",
+  en: "Hoang Minh Cashew Import Export Co., Ltd. processes and exports cashew. With years of experience and a commitment to international standards, the company supplies cashew to markets around the world, with a focus on quality, sustainability, and customer satisfaction. The factory covers 3,000 m² and uses technology lines to produce fresh products with no preservatives. Supply capacity is 500 to 750 tons a month. Workers are trained in machine operation, quality control, and food-safety and hygiene standards.",
 };
 
 const certIntro = {
@@ -82,84 +94,84 @@ export const certificates: { title: string; image?: string; body: Copy }[] = [
 
 export const commitments: Copy[] = [
   {
-    vi: "Quy trình sản xuất hiện đại: Hoàng Minh Cashew áp dụng công nghệ tiên tiến và quy trình kiểm soát chất lượng nghiêm ngặt từ khâu chọn lựa nguyên liệu, gia công, chế biến đến đóng gói.",
-    en: "Modern production: Hoang Minh Cashew uses advanced technology and strict quality control from raw-material selection through processing and packing.",
+    vi: "Nhà máy dùng dây chuyền công nghệ để sản xuất hạt điều tươi, không chất bảo quản.",
+    en: "The factory uses technology lines to produce fresh cashew with no preservatives.",
   },
   {
-    vi: "Cam kết bền vững: Không ngừng nâng cao chất lượng sản phẩm, tối ưu hóa quy trình sản xuất và đảm bảo trách nhiệm với môi trường.",
-    en: "Sustainability: the company keeps improving product quality, refining the process, and taking responsibility for the environment.",
+    vi: "Công nhân được đào tạo vận hành máy, kiểm soát chất lượng, và tuân thủ an toàn cùng vệ sinh thực phẩm.",
+    en: "Workers are trained in machine operation, quality control, and compliance with safety and food-hygiene standards.",
   },
 ];
 
 export const certClose = {
-  vi: "Với nền tảng vững chắc và những chứng nhận quốc tế, Công ty TNHH XNK Hoàng Minh Cashew cam kết mang đến sản phẩm hạt điều đạt chuẩn chất lượng toàn cầu, góp phần nâng tầm giá trị hạt điều Việt Nam trên thị trường quốc tế.",
-  en: "With that foundation and international certificates, Hoang Minh Cashew supplies cashew that meets global quality standards and raises the value of Vietnamese cashew on the world market.",
+  vi: "Với các chứng nhận này và quy trình được kiểm soát từ lúc nhận điều thô đến lúc xuất kho, Hoàng Minh Cashew cung cấp hạt điều cho khách hàng quốc tế.",
+  en: "With these certificates and a controlled process from raw-nut receipt to dispatch, Hoang Minh Cashew supplies cashew to international buyers.",
 };
+
+export const factoryFacts: { label: Copy; value: Copy }[] = [
+  {
+    label: { vi: "Diện tích nhà máy", en: "Factory area" },
+    value: { vi: "3.000 m²", en: "3,000 m²" },
+  },
+  {
+    label: { vi: "Công suất cung ứng", en: "Supply capacity" },
+    value: { vi: "500–750 tấn/tháng", en: "500–750 tons/month" },
+  },
+  {
+    label: { vi: "Sản phẩm", en: "Products" },
+    value: { vi: "Tươi, không chất bảo quản", en: "Fresh, no preservatives" },
+  },
+];
 
 export const markets: { region: Copy; detail: Copy }[] = [
   {
+    region: { vi: "Châu Mỹ", en: "Americas" },
+    detail: {
+      vi: "Hoa Kỳ và Canada.",
+      en: "The United States and Canada.",
+    },
+  },
+  {
     region: { vi: "Châu Âu", en: "Europe" },
     detail: {
-      vi: "Hà Lan, Ba Lan, Đức, Hy Lạp, Pháp, Ý – những thị trường tiêu thụ hạt điều lớn với yêu cầu nghiêm ngặt về chất lượng và an toàn thực phẩm.",
-      en: "The Netherlands, Poland, Germany, Greece, France, and Italy. These are large cashew markets with strict quality and food-safety requirements.",
+      vi: "Hà Lan, Nga, Ba Lan, Anh, Hy Lạp, Đức và Tây Ban Nha.",
+      en: "The Netherlands, Russia, Poland, the United Kingdom, Greece, Germany, and Spain.",
     },
   },
   {
     region: { vi: "Trung Đông", en: "Middle East" },
     detail: {
-      vi: "Thổ Nhĩ Kỳ, Các Tiểu vương quốc Ả Rập Thống nhất (UAE), Ả Rập Xê Út, Algeria, Libya… – khu vực có nhu cầu tiêu thụ hạt điều ngày càng tăng, đặc biệt là phân khúc hạt điều cao cấp.",
-      en: "Turkey, the United Arab Emirates, Saudi Arabia, Algeria, Libya, and others. Demand is growing, especially for premium kernels.",
+      vi: "Thổ Nhĩ Kỳ, Các Tiểu vương quốc Ả Rập Thống nhất (UAE) và Liban.",
+      en: "Turkey, the United Arab Emirates, and Lebanon.",
     },
   },
   {
-    region: { vi: "Châu Mỹ", en: "Americas" },
+    region: { vi: "Châu Á", en: "Asia" },
     detail: {
-      vi: "Mỹ, Canada – thị trường khắt khe, đòi hỏi tiêu chuẩn FDA và các chứng nhận an toàn thực phẩm cao cấp.",
-      en: "The United States and Canada. These markets require FDA standards and advanced food-safety certificates.",
-    },
-  },
-  {
-    region: { vi: "Châu Á – Thái Bình Dương", en: "Asia-Pacific" },
-    detail: {
-      vi: "Thái Lan, Singapore, Australia, Trung Quốc, Hong Kong… – những thị trường năng động với sức tiêu thụ hạt điều mạnh mẽ, đặc biệt là trong ngành thực phẩm chế biến và bán lẻ.",
-      en: "Thailand, Singapore, Australia, China, Hong Kong, and others. These active markets consume cashew strongly in processing and retail.",
+      vi: "Hồng Kông và Thái Lan.",
+      en: "Hong Kong and Thailand.",
     },
   },
 ];
 
 export const marketIntro = {
-  vi: "Từ khi thành lập, Hoàng Minh Cashew đã nhanh chóng chiếm lĩnh nhiều thị trường quan trọng trên toàn cầu, đặc biệt là các khu vực đòi hỏi tiêu chuẩn chất lượng cao như:",
-  en: "Since it was founded, Hoang Minh Cashew has entered important markets around the world, especially regions that demand high quality standards:",
-};
-
-export const marketMapCaption = {
-  vi: "Màu xanh là những quốc gia Hoàng Minh Cashew đã xuất khẩu. Chấm tròn đánh dấu Singapore và Hong Kong.",
-  en: "Green marks the countries Hoang Minh Cashew has exported to. Dots mark Singapore and Hong Kong.",
+  vi: "Hoàng Minh Cashew xuất khẩu sang Hoa Kỳ, Canada, Hà Lan, Nga, Ba Lan, Anh, Hy Lạp, Đức, Tây Ban Nha, Thổ Nhĩ Kỳ, UAE, Liban, Hồng Kông và Thái Lan.",
+  en: "Hoang Minh Cashew exports to the United States, Canada, the Netherlands, Russia, Poland, the United Kingdom, Greece, Germany, Spain, Turkey, the UAE, Lebanon, Hong Kong, and Thailand.",
 };
 
 const nutrition = {
-  vi: "Hạt điều rất bổ dưỡng và là nguồn cung cấp protein và các khoáng chất thiết yếu, bao gồm: đồng, canxi, magiê, sắt, phốt pho, kali và kẽm. Chứa 0% cholesterol. Hoàn hảo để làm thức ăn cao cấp cho mọi người. Trong hạt điều có chứa rất nhiều vitamin và khoáng chất, chất chống oxy hóa như vitamin E, K, B6 và khoáng chất đồng, photpho, kẽm, magie, sắt và selen giúp duy trì tốt các chức năng của cơ thể.",
-  en: "Cashew is nutritious. It supplies protein and essential minerals including copper, calcium, magnesium, iron, phosphorus, potassium, and zinc. It contains 0% cholesterol and suits premium food use. The kernel also provides vitamins E, K, and B6, plus copper, phosphorus, zinc, magnesium, iron, and selenium.",
+  vi: "Hạt điều cung cấp protein và các khoáng chất như đồng, canxi, magiê, sắt, phốt pho, kali và kẽm. Nhân điều không chứa cholesterol, và có vitamin E, K, B6 cùng selen.",
+  en: "Cashew supplies protein and minerals such as copper, calcium, magnesium, iron, phosphorus, potassium, and zinc. The kernel contains no cholesterol, and it provides vitamins E, K, and B6, plus selenium.",
 };
 
-const processSteps: Copy[] = [
-  {
-    vi: "Xử lý nhiệt: Hấp hạt điều bằng hơi nóng, dầu nóng hoặc hơi nước để vỏ cứng mềm hơn, rồi làm nguội khoảng 12 giờ trước khi chẻ lấy nhân.",
-    en: "Heat treatment: steam, hot oil, or vapor softens the hard shell. The nuts cool for about 12 hours before shelling.",
-  },
-  {
-    vi: "Chẻ vỏ thu nhân: Công nhân có tay nghề tách vỏ ngoài để lấy nhân, hạn chế vỡ hạt. Sau bước này có vỏ điều thô, vỏ lụa và nhân điều thô.",
-    en: "Shelling: skilled workers remove the outer shell and keep the kernel whole. This step yields raw shell, testa, and raw kernel.",
-  },
-  {
-    vi: "Phân loại và chấm điểm: Nhân trắng được chia thành nguyên hạt và hạt vỡ. Nguyên hạt có nhiều cấp kích thước; hạt vỡ có các cấp riêng.",
-    en: "Grading: white kernels are sorted into wholes and brokens. Wholes are graded by size, and brokens have their own grades.",
-  },
-];
-
 const benefits = {
-  vi: "Ăn hạt điều thường xuyên có thể hỗ trợ tim mạch, giảm nguy cơ tiểu đường, hỗ trợ xương và răng, giảm nguy cơ thiếu máu, và tăng cường hệ miễn dịch.",
-  en: "Regular cashew consumption can support heart health, help manage diabetes risk, support bones and teeth, reduce anemia risk, and strengthen immunity.",
+  vi: "Hạt điều thường được dùng như thực phẩm bổ dưỡng trong ăn uống hằng ngày và trong chế biến.",
+  en: "Cashew is widely used as a nutritious food, both for everyday eating and for processing.",
+};
+
+const packingSpec: Copy = {
+  vi: "Túi PE, bơm nitơ và CO2, hút chân không, hàn nhiệt, đóng thùng carton và dán nhãn",
+  en: "PE bag, nitrogen and CO2, vacuum heat seal, carton, and label",
 };
 
 export type Product = {
@@ -173,199 +185,379 @@ export type Product = {
   specs: { label: Copy; value: Copy }[];
 };
 
-const sharedSpecs = [
-  { label: { vi: "Độ ẩm", en: "Moisture" }, value: { vi: "Tối đa 5%", en: "Maximum 5%" } },
-  { label: { vi: "Bị hỏng", en: "Damaged" }, value: { vi: "Tối đa 10%", en: "Maximum 10%" } },
-  { label: { vi: "Khiếm khuyết", en: "Defects" }, value: { vi: "Tối đa 8%", en: "Maximum 8%" } },
-  {
-    label: { vi: "Đóng gói", en: "Packing" },
-    value: { vi: "22,68 kg mỗi túi / 700 túi mỗi cont 20ft", en: "22.68 kg per bag / 700 bags per 20ft container" },
-  },
-];
+function specs(form: Copy, appearance: Copy): Product["specs"] {
+  return [
+    { label: { vi: "Dạng hạt", en: "Form" }, value: form },
+    { label: { vi: "Màu sắc", en: "Appearance" }, value: appearance },
+    { label: { vi: "Đóng gói", en: "Packing" }, value: packingSpec },
+  ];
+}
 
 export const products: Product[] = [
   {
-    slug: "hat-dieu-ws",
-    name: { vi: "Hạt Điều WS", en: "WS Cashew" },
-    grade: "WS",
-    image: "/products/ws.jpg",
-    tone: "split",
+    slug: "hat-dieu-ww180",
+    name: { vi: "Hạt điều WW180", en: "WW180 Cashew" },
+    grade: "WW180",
+    image: "/products/ww180.png",
+    tone: "cream",
     summary: {
-      vi: "Nhân trắng vỡ đôi, dùng cho chế biến và thực phẩm cao cấp.",
-      en: "White splits for processing and premium food.",
+      vi: "Nhân trắng nguyên hạt, cỡ lớn nhất trong nhóm WW.",
+      en: "Whole white kernels, the largest WW grade.",
     },
     detail: {
-      vi: "Hạt Điều WS là nhân trắng bị tách đôi. Sản phẩm vẫn giữ giá trị dinh dưỡng của hạt điều nguyên hạt và thường dùng để rang, tẩm vị hoặc chế biến thực phẩm.",
-      en: "WS cashew is a white kernel split into halves. It keeps the nutrition of a whole kernel and is commonly roasted, seasoned, or used in food processing.",
+      vi: "WW180 là nhân trắng nguyên hạt cỡ lớn, đứng đầu các cấp WW180, WW240, WW320 và WW450. Dùng khi khách cần nhân lớn và đều.",
+      en: "WW180 is a large whole white kernel, the leading grade among WW180, WW240, WW320, and WW450. It is for buyers who need a large, even kernel.",
     },
-    specs: [
-      { label: { vi: "Màu sắc", en: "Color" }, value: { vi: "Trắng, hạt vỡ đôi", en: "White splits" } },
-      { label: { vi: "Dạng hạt", en: "Form" }, value: { vi: "Nhân vỡ đôi", en: "Split kernels" } },
-      ...sharedSpecs,
-    ],
+    specs: specs(
+      { vi: "Nhân trắng nguyên hạt", en: "Whole white kernels" },
+      { vi: "Trắng ngà", en: "Ivory white" },
+    ),
   },
   {
     slug: "hat-dieu-ww240",
-    name: { vi: "Hạt Điều WW240", en: "WW240 Cashew" },
+    name: { vi: "Hạt điều WW240", en: "WW240 Cashew" },
     grade: "WW240",
-    image: "/products/ww240.jpg",
+    image: "/products/ww240.png",
     tone: "cream",
     summary: {
-      vi: "Nhân trắng nguyên hạt, cỡ phổ biến cho xuất khẩu và chế biến.",
-      en: "Whole white kernels, a common export and processing size.",
+      vi: "Nhân trắng nguyên hạt, cỡ nhỏ hơn WW180.",
+      en: "Whole white kernels, a size below WW180.",
     },
     detail: {
-      vi: "Hạt điều nhân trắng WW240 là nhân nguyên hạt màu trắng ngà. Cỡ này được dùng rộng rãi cho hạt điều rang muối, mật ong, tỏi ớt và các sản phẩm đóng gói bán lẻ.",
-      en: "WW240 is an ivory whole white kernel. This size is widely used for salted, honey, and chili-garlic roasts, and for retail packing.",
+      vi: "WW240 là nhân trắng nguyên hạt, cỡ nằm giữa WW180 và WW320.",
+      en: "WW240 is a whole white kernel, sized between WW180 and WW320.",
     },
-    specs: [
-      { label: { vi: "Màu sắc", en: "Color" }, value: { vi: "Trắng nguyên hạt", en: "Whole white" } },
-      { label: { vi: "Số hạt / pound", en: "Nuts per pound" }, value: { vi: "220–240", en: "220–240" } },
-      { label: { vi: "Số hạt / kg", en: "Nuts per kg" }, value: { vi: "485–530", en: "485–530" } },
-      ...sharedSpecs,
-    ],
+    specs: specs(
+      { vi: "Nhân trắng nguyên hạt", en: "Whole white kernels" },
+      { vi: "Trắng ngà", en: "Ivory white" },
+    ),
   },
   {
-    slug: "hat-dieu-ww210",
-    name: { vi: "Hạt Điều WW210", en: "WW210 Cashew" },
-    grade: "WW210",
-    image: "/products/ww210.jpg",
+    slug: "hat-dieu-ww320",
+    name: { vi: "Hạt điều WW320", en: "WW320 Cashew" },
+    grade: "WW320",
+    image: "/products/ww320.png",
     tone: "gold",
     summary: {
-      vi: "Nhân trắng nguyên hạt cỡ lớn, phù hợp thực phẩm cao cấp.",
-      en: "Large whole white kernels for premium food.",
+      vi: "Nhân trắng nguyên hạt, cỡ thương mại nhỏ hơn WW240.",
+      en: "Whole white kernels, a commercial size below WW240.",
     },
     detail: {
-      vi: "Hạt điều nhân trắng WW210 là nhân nguyên hạt, to và đều. Hạt lớn thường được chọn cho các sản phẩm nguyên hạt cao cấp như rang muối, mật ong, tỏi ớt và wasabi.",
-      en: "WW210 is a large, even whole white kernel. Larger kernels are used for premium whole-nut products such as salted, honey, chili-garlic, and wasabi roasts.",
+      vi: "WW320 là nhân trắng nguyên hạt, nhỏ hơn WW240 và lớn hơn WW450.",
+      en: "WW320 is a whole white kernel, smaller than WW240 and larger than WW450.",
     },
-    specs: [
-      { label: { vi: "Màu sắc", en: "Color" }, value: { vi: "Trắng nguyên hạt", en: "Whole white" } },
-      { label: { vi: "Số hạt / pound", en: "Nuts per pound" }, value: { vi: "200–210", en: "200–210" } },
-      { label: { vi: "Số hạt / kg", en: "Nuts per kg" }, value: { vi: "395–465", en: "395–465" } },
-      ...sharedSpecs,
-    ],
+    specs: specs(
+      { vi: "Nhân trắng nguyên hạt", en: "Whole white kernels" },
+      { vi: "Trắng ngà", en: "Ivory white" },
+    ),
   },
   {
-    slug: "hat-dieu-ww180",
-    name: { vi: "Hạt Điều WW180", en: "WW180 Cashew" },
-    grade: "WW180",
-    image: "/products/ww180.jpg",
-    tone: "green",
+    slug: "hat-dieu-ww450",
+    name: { vi: "Hạt điều WW450", en: "WW450 Cashew" },
+    grade: "WW450",
+    image: "/products/ww450.png",
+    tone: "gold",
     summary: {
-      vi: "Cấp nguyên hạt lớn nhất, thường được gọi là King of Cashew.",
-      en: "The largest whole grade, often called the King of Cashew.",
+      vi: "Nhân trắng nguyên hạt, cỡ nhỏ nhất trong nhóm WW.",
+      en: "Whole white kernels, the smallest WW grade.",
     },
     detail: {
-      vi: "Hạt điều nhân trắng WW180 có khoảng 140 đến 180 hạt mỗi pound (265–395 hạt/kg). Đây là cấp nguyên hạt cao cấp nhất, thường được gọi là King of Cashew, dùng cho hạt điều sấy, mật ong, rang muối, tỏi ớt, wasabi và các sản phẩm cần nhân nguyên hạt lớn.",
-      en: "WW180 white wholes count about 140 to 180 nuts per pound (265–395 per kg). This is the top whole grade, often called the King of Cashew, used for dried, honey, salted, chili-garlic, wasabi, and other products that need a large whole kernel.",
+      vi: "WW450 là nhân trắng nguyên hạt cỡ nhỏ trong nhóm WW180, WW240, WW320 và WW450. Hạt vẫn nguyên, dùng cho ăn trực tiếp và chế biến.",
+      en: "WW450 is the small whole-white grade among WW180, WW240, WW320, and WW450. The kernels stay whole, for snacking and processing.",
     },
-    specs: [
-      { label: { vi: "Màu sắc", en: "Color" }, value: { vi: "Trắng nguyên hạt", en: "Whole white" } },
-      { label: { vi: "Số hạt / pound", en: "Nuts per pound" }, value: { vi: "140–180", en: "140–180" } },
-      { label: { vi: "Số hạt / kg", en: "Nuts per kg" }, value: { vi: "265–395", en: "265–395" } },
-      {
-        label: { vi: "Hạt nhỏ hơn cấp", en: "Lower size grade" },
-        value: { vi: "Tối đa 10%", en: "Maximum 10%" },
-      },
-      ...sharedSpecs,
-    ],
+    specs: specs(
+      { vi: "Nhân trắng nguyên hạt", en: "Whole white kernels" },
+      { vi: "Trắng ngà", en: "Ivory white" },
+    ),
+  },
+  {
+    slug: "hat-dieu-ws",
+    name: { vi: "Hạt điều WS", en: "WS Cashew" },
+    grade: "WS",
+    image: "/products/ws.png",
+    tone: "split",
+    summary: {
+      vi: "Nhân trắng vỡ đôi.",
+      en: "White splits.",
+    },
+    detail: {
+      vi: "WS là nhân trắng bị tách thành hai mảnh dọc. Hạt giữ màu trắng ngà và thường dùng để rang, tẩm vị hoặc chế biến.",
+      en: "WS kernels are white halves split lengthwise. They keep an ivory color and are used for roasting, seasoning, or processing.",
+    },
+    specs: specs(
+      { vi: "Nhân trắng vỡ đôi", en: "White splits" },
+      { vi: "Trắng ngà", en: "Ivory white" },
+    ),
+  },
+  {
+    slug: "hat-dieu-lp",
+    name: { vi: "Hạt điều LP", en: "LP Cashew" },
+    grade: "LP",
+    image: "/products/lp.png",
+    tone: "split",
+    summary: {
+      vi: "Mảnh lớn, màu trắng ngà.",
+      en: "Large ivory pieces.",
+    },
+    detail: {
+      vi: "LP là mảnh nhân lớn, vỡ không đều, màu trắng ngà. Cấp này dùng cho chế biến, bánh kẹo và các sản phẩm cần mảnh hạt to.",
+      en: "LP is large, irregular ivory pieces. This grade is used in processing, confectionery, and products that need a large piece.",
+    },
+    specs: specs(
+      { vi: "Mảnh lớn", en: "Large pieces" },
+      { vi: "Trắng ngà", en: "Ivory" },
+    ),
+  },
+  {
+    slug: "hat-dieu-sp",
+    name: { vi: "Hạt điều SP", en: "SP Cashew" },
+    grade: "SP",
+    image: "/products/sp.png",
+    tone: "green",
+    summary: {
+      vi: "Mảnh nhỏ, màu trắng ngà.",
+      en: "Small ivory pieces.",
+    },
+    detail: {
+      vi: "SP là mảnh nhân nhỏ, vụn hơn LP và to hơn BB. Dùng làm nguyên liệu chế biến và bánh.",
+      en: "SP is small pieces, finer than LP and larger than BB. It is used as an ingredient in processing and bakery.",
+    },
+    specs: specs(
+      { vi: "Mảnh nhỏ", en: "Small pieces" },
+      { vi: "Trắng ngà", en: "Ivory" },
+    ),
+  },
+  {
+    slug: "hat-dieu-bb",
+    name: { vi: "Hạt điều BB", en: "BB Cashew" },
+    grade: "BB",
+    image: "/products/bb.png",
+    tone: "green",
+    summary: {
+      vi: "Mảnh vụn rất nhỏ.",
+      en: "Very fine pieces, baby bits.",
+    },
+    detail: {
+      vi: "BB là mảnh vụn nhỏ nhất, dạng hạt vụn trắng ngà. Dùng làm nguyên liệu, rắc bề mặt và chế biến.",
+      en: "BB is the finest piece grade, ivory baby bits. It is used as an ingredient, a topping, and in processing.",
+    },
+    specs: specs(
+      { vi: "Mảnh vụn", en: "Baby bits" },
+      { vi: "Trắng ngà", en: "Ivory" },
+    ),
+  },
+  {
+    slug: "hat-dieu-lbw",
+    name: { vi: "Hạt điều LBW", en: "LBW Cashew" },
+    grade: "LBW",
+    image: "/products/lbw.png",
+    tone: "gold",
+    summary: {
+      vi: "Nhân nguyên hạt màu ngà, có thể có vết nhẹ.",
+      en: "Ivory whole kernels that may show a light blemish.",
+    },
+    detail: {
+      vi: "LBW là nhân nguyên hạt màu ngà kem, bề mặt có thể có chấm hoặc vết nhẹ, khác với nhân trắng WW.",
+      en: "LBW is a cream-ivory whole kernel. The surface may show light spots or blemish, unlike the white WW grades.",
+    },
+    specs: specs(
+      { vi: "Nhân nguyên hạt", en: "Whole kernels" },
+      { vi: "Ngà kem, có thể có vết nhẹ", en: "Cream ivory, may show a light blemish" },
+    ),
+  },
+  {
+    slug: "hat-dieu-sw",
+    name: { vi: "Hạt điều SW", en: "SW Cashew" },
+    grade: "SW",
+    image: "/products/sw.png",
+    tone: "gold",
+    summary: {
+      vi: "Nhân nguyên hạt cháy nhẹ, màu vàng.",
+      en: "Lightly scorched whole kernels, golden in color.",
+    },
+    detail: {
+      vi: "SW là nhân nguyên hạt màu vàng đều, cháy nhẹ so với nhân trắng. Hạt vẫn nguyên vẹn.",
+      en: "SW kernels are evenly golden wholes, lightly scorched compared with white kernels. The nuts stay whole.",
+    },
+    specs: specs(
+      { vi: "Nhân nguyên hạt cháy nhẹ", en: "Scorched wholes" },
+      { vi: "Vàng", en: "Golden" },
+    ),
+  },
+  {
+    slug: "hat-dieu-sk1",
+    name: { vi: "Hạt điều SK1", en: "SK1 Cashew" },
+    grade: "SK1",
+    image: "/products/sk1.png",
+    tone: "split",
+    summary: {
+      vi: "Nhân nguyên hạt màu kem, có chấm sẫm.",
+      en: "Cream whole kernels with darker spots.",
+    },
+    detail: {
+      vi: "SK1 là nhân nguyên hạt màu kem đến vàng nhạt. Một số hạt có chấm sẫm hoặc đầu hạt đậm hơn cấp nhân trắng và SW.",
+      en: "SK1 kernels are cream to pale gold wholes. Some nuts show dark spots or a darker tip compared with white grades and SW.",
+    },
+    specs: specs(
+      { vi: "Nhân nguyên hạt", en: "Whole kernels" },
+      { vi: "Kem đến vàng, có chấm sẫm", en: "Cream to gold, with dark spots" },
+    ),
+  },
+  {
+    slug: "hat-dieu-rang",
+    name: { vi: "Hạt điều rang", en: "Roasted Cashew" },
+    grade: "Roasted",
+    image: "/products/roasted.png",
+    tone: "green",
+    summary: {
+      vi: "Nhân đã rang, màu nâu, dùng ăn liền.",
+      en: "Roasted kernels, brown, ready to eat.",
+    },
+    detail: {
+      vi: "Hạt điều rang là nhân đã qua rang, màu nâu, còn lớp vỏ lụa xém ở một số hạt. Sản phẩm dùng để ăn trực tiếp.",
+      en: "Roasted cashew is a kernel roasted to a brown color, with some toasted skin still on the nuts. It is for direct eating.",
+    },
+    specs: specs(
+      { vi: "Nhân rang", en: "Roasted kernels" },
+      { vi: "Nâu", en: "Brown" },
+    ),
+  },
+];
+
+const processSteps: Copy[] = [
+  {
+    vi: "Tiếp nhận điều thô và kiểm tra vật lý, tạp chất, độ ẩm. Lô không đạt thì trả hàng. Nguyên liệu đạt được sàng size A cồ (A+), A, B và bể.",
+    en: "Raw cashew is received and checked for physical condition, impurities, and moisture. A failed lot is rejected. Passed nuts are graded into size A+, A, B, and broken.",
+  },
+  {
+    vi: "Hấp 20–40 phút ở 100°C, áp suất 0,1–0,4 kg/cm². Tách vỏ cứng bằng máy và bằng tay.",
+    en: "Steam for 20–40 minutes at 100°C and 0.1–0.4 kg/cm². The hard shell is removed by machine and by hand.",
+  },
+  {
+    vi: "Sấy 65–80°C trong 20–24 giờ, hồi ẩm 12–24 giờ đến độ ẩm khoảng 4%, rồi bóc vỏ lụa.",
+    en: "Dry at 65–80°C for 20–24 hours, condition for 12–24 hours to about 4% moisture, then peel the testa.",
+  },
+  {
+    vi: "Bắn màu để loại lỗi và phân cỡ. QC kiểm tra vật lý; không đạt thì bắn màu lại. Sau đó cân và hun trùng bằng phosphine trong 7 ngày, thông thoáng 2 ngày.",
+    en: "Color sorting removes defects and sizes the kernels. QC checks them physically, and a failed lot is color-sorted again. The lot is then weighed and fumigated with phosphine for 7 days, then ventilated for 2 days.",
+  },
+  {
+    vi: "Trộn hàng, sàng rung để loại tạp chất, bụi và hạt dưới size, rồi qua nam châm, hút tạp chất và lựa tay. QC kiểm tra lại vật lý và độ ẩm; không đạt thì phân loại lại.",
+    en: "The lot is mixed, vibrate-sieved to remove impurities, dust, and undersize kernels, then passed over a magnet, suction, and hand sorting. QC checks physical condition and moisture again; a failed lot is sorted again.",
+  },
+  {
+    vi: "Máy X-ray (CCP1) loại gốm, kính, cao su và thép. Máy dò kim loại (CCP2) loại sắt, kim loại không từ và thép không gỉ.",
+    en: "X-ray (CCP1) removes ceramic, glass, rubber, and steel. The metal detector (CCP2) removes iron, non-ferrous metal, and stainless steel.",
+  },
+  {
+    vi: "Cho vào bao PE, bơm nitơ và CO2, hút chân không, hàn nhiệt, đóng thùng carton, dán nhãn, rồi lưu kho cách tường 20 cm trước khi xuất.",
+    en: "Kernels go into a PE bag with nitrogen and CO2, are vacuumed and heat-sealed, packed in a labeled carton, and stored 20 cm from the wall before export.",
   },
 ];
 
 export const productShared = { nutrition, processSteps, benefits };
 
-export const dryingSteps: Copy[] = [
-  {
-    vi: "Thu hoạch và chọn lọc: Hạt điều thô được loại những hạt xấu, không đạt tiêu chuẩn.",
-    en: "Harvest and selection: poor raw nuts that miss the standard are removed.",
-  },
-  {
-    vi: "Lọc sàng: Hạt được làm sạch bụi bẩn và tạp chất để bảo đảm vệ sinh an toàn thực phẩm.",
-    en: "Screening: dust and foreign matter are cleaned off for food safety.",
-  },
-  {
-    vi: "Phơi hạt: Hạt được trải trên giàn hoặc bạt dưới nắng, khoảng 4 đến 8 giờ mỗi ngày tùy thời tiết và độ ẩm.",
-    en: "Sun drying: nuts are spread on racks or tarps for about 4 to 8 hours a day, depending on weather and moisture.",
-  },
-  {
-    vi: "Lật trở: Hạt được đảo định kỳ để khô đều và không bị nóng cục bộ.",
-    en: "Turning: nuts are turned regularly so they dry evenly and do not overheat in one spot.",
-  },
-  {
-    vi: "Kiểm tra chất lượng: Sau khi phơi, kiểm tra độ ẩm, độ giòn và màu sắc trước khi bóc vỏ và phân loại.",
-    en: "Quality check: moisture, crispness, and color are checked before shelling and grading.",
-  },
-];
-
-export const business = {
-  title: { vi: "Quy trình xử lý hạt điều thô", en: "Raw cashew processing" },
+export const packingProcess: {
+  lead: Copy;
+  close: Copy;
+  preparationTitle: Copy;
+  lineTitle: Copy;
+  chapters: { title: Copy; body: Copy }[];
+  steps: { image: string; title: Copy; body: Copy }[];
+} = {
   lead: {
-    vi: "Nguyên liệu hạt điều thô được thu hoạch từ các vùng trồng nổi tiếng của Việt Nam, Campuchia và một số nước trồng điều khác. Hạt được chọn từ nhà cung cấp uy tín. Đội ngũ có kinh nghiệm phơi khô và bóc tách để lấy nhân điều tốt nhất.",
-    en: "Raw cashew comes from well-known growing regions in Vietnam, Cambodia, and other producing countries. Nuts are bought from trusted suppliers. An experienced team dries and shells them to produce the best kernels.",
+    vi: "Điều thô đi qua kiểm tra, hấp, tách vỏ, sấy, phân loại và hun trùng trước khi lên dây chuyền đóng gói. Lô không đạt được trả hàng, bắn màu lại, hoặc phân loại lại.",
+    en: "Raw cashew passes inspection, steaming, shelling, drying, grading, and fumigation before it reaches the packing line. A failed lot is returned, color-sorted again, or sorted again.",
   },
   close: {
-    vi: "Công ty cam kết sản phẩm đạt tiêu chuẩn quốc tế. Đầu tư vào công nghệ và quy trình chế biến giúp đáp ứng thị trường trong nước và xuất khẩu sang các thị trường khó tính.",
-    en: "The company commits to international standards. Investment in technology and processing serves both the domestic market and demanding export markets.",
+    vi: "Hai điểm kiểm soát cuối là CCP1 trên máy X-ray và CCP2 trên máy dò kim loại. Thành phẩm được hút chân không trong bao PE có nitơ và CO2, đóng thùng, dán nhãn, rồi xếp kho cách tường 20 cm. Quy cách thùng theo hợp đồng, vui lòng liên hệ trước khi đóng hàng.",
+    en: "The last two control points are CCP1 on the X-ray and CCP2 on the metal detector. Finished kernels are vacuum-packed in a PE bag with nitrogen and CO2, cartoned, labeled, and stored 20 cm from the wall. For a carton spec on a contract, contact us before the lot is packed.",
   },
-};
-
-export const packingProcess = {
-  lead: {
-    vi: "Trước khi một lô hàng rời nhà máy, từng hạt điều đi qua quy trình đóng gói được kiểm soát từ khâu chọn tay đến lúc niêm phong kiện. Chúng tôi giữ vệ sinh, an toàn thực phẩm và sự đồng đều của lô bằng người chọn hạt và bằng máy móc hiện đại.",
-    en: "Before a lot leaves the factory, every kernel goes through a controlled packing process, from hand selection to the sealed carton. Hygiene, food safety, and an even lot are kept by careful selectors and modern machinery.",
+  preparationTitle: {
+    vi: "Từ điều thô đến nhân trắng",
+    en: "From raw nut to white kernel",
   },
-  close: {
-    vi: "Đây là cách Hoàng Minh Cashew giữ chất lượng đến bước cuối: hạt được chọn bằng tay, được kiểm tra trên máy, được đóng thành khối và được niêm phong kèm nhãn lô. Nếu quý khách cần khối lượng thùng hoặc quy cách theo hợp đồng, hãy liên hệ để chúng tôi chốt trước khi đóng hàng.",
-    en: "This is how Hoang Minh Cashew carries quality through to the last step: kernels are selected by hand, checked on the machine, packed into a firm block, and sealed with a lot label. If you need a carton weight or a packing spec for your contract, contact us before the lot is packed.",
+  lineTitle: {
+    vi: "Trên dây chuyền đóng gói",
+    en: "On the packing line",
   },
-  steps: [
+  chapters: [
     {
-      image: "/process/01-select.jpg",
-      title: { vi: "Chọn từng hạt trước khi đóng gói", en: "Each kernel is selected before packing" },
+      title: { vi: "Tiếp nhận và sàng size", en: "Receiving and sizing" },
       body: {
-        vi: "Trên băng chuyền, từng nhân điều được nhìn và nhặt bằng tay. Công nhân mang lưới trùm đầu, khẩu trang và găng tay. Hạt vỡ, hạt xỉn màu hoặc hạt không đạt được tách riêng, để lô hàng sạch và đều trước khi vào máy.",
-        en: "On the belt, every kernel is looked at and picked by hand. Selectors wear hairnets, masks, and gloves. Broken, dull, or off-spec nuts are taken out, so the lot is clean and even before it reaches the machines.",
+        vi: "Nhà máy nhận điều thô và ghi nhận từng lô trước khi kiểm tra. QC xem ngoại quan, tạp chất và độ ẩm. Lô không đạt được trả lại, không đưa vào hấp. Lô đạt được sàng thành size A cồ (A+), A, B và bể. Mỗi cỡ đi riêng để hấp và chẻ cho đều.",
+        en: "The factory receives raw cashew in shell and logs each lot before inspection. QC checks appearance, impurities, and moisture. A lot that fails is returned and is not steamed. Passed nuts are graded into size A+ (large A), A, B, and broken. Each size stays separate so steaming and shelling stay even.",
       },
     },
     {
-      image: "/process/02-line.jpg",
-      title: { vi: "Đưa hạt thành phẩm vào dây chuyền", en: "Finished kernels enter the line" },
+      title: { vi: "Hấp và tách vỏ", en: "Steaming and shelling" },
       body: {
-        vi: "Hạt đã chọn được băng tải đưa lên hệ thống máy inox trong phòng kín. Từ đây hạt đi theo dây chuyền, hạn chế bụi, và được chuẩn bị cho bước kiểm tra tiếp theo trước khi đóng gói.",
-        en: "Selected kernels travel up a conveyor into the stainless-steel line inside a closed room. They move as one flow, with less dust, and are prepared for the next check before packing.",
+        vi: "Điều thô được hấp 20–40 phút ở 100°C, áp suất 0,1–0,4 kg/cm² để vỏ cứng mềm ra. Vỏ được tách bằng máy và bằng tay, rồi đưa riêng, không đi theo nhân sang công đoạn sấy.",
+        en: "Raw nuts are steamed for 20–40 minutes at 100°C and 0.1–0.4 kg/cm² so the hard shell softens. The shell is removed by machine and by hand, then taken out on its own. It does not follow the kernel into drying.",
+      },
+    },
+    {
+      title: { vi: "Sấy, hồi ẩm và bóc vỏ lụa", en: "Drying, conditioning, and peeling" },
+      body: {
+        vi: "Nhân còn vỏ lụa được sấy ở 65–80°C trong 20–24 giờ. Sau đó hồi ẩm 12–24 giờ đến khoảng 4% để hạt bớt giòn và ít vỡ khi bóc. Vỏ lụa được loại riêng. Nhân trắng đi tiếp sang bắn màu.",
+        en: "Kernels still in the testa are dried at 65–80°C for 20–24 hours, then conditioned for 12–24 hours to about 4% moisture so the nut is less brittle and breaks less when peeled. The testa is removed on its own. The white kernel continues to color sorting.",
+      },
+    },
+    {
+      title: { vi: "Bắn màu, cân và hun trùng", en: "Color sorting, weighing, and fumigation" },
+      body: {
+        vi: "Máy bắn màu loại hạt lỗi, hạt khác màu và phân cỡ theo từng grade. QC kiểm tra lại ngoại quan. Lô không đạt được bắn màu lại, chưa cân và chưa hun. Lô đạt được cân, hun phosphine 7 ngày, thông thoáng 2 ngày, rồi trộn để màu và cỡ đồng đều trước khi lên dây chuyền.",
+        en: "A color sorter removes defective and off-color kernels and sizes the nuts into finished grades. QC checks appearance again. A failed lot goes back through the sorter. It is not weighed or fumigated yet. A passed lot is weighed, fumigated with phosphine for 7 days, ventilated for 2 days, then mixed so color and size are even before it reaches the line.",
+      },
+    },
+  ],
+  steps: [
+    {
+      image: "/process/02-line.jpg",
+      title: { vi: "Sàng rung", en: "Vibrate-sieve" },
+      body: {
+        vi: "Máy sàng rung loại tạp chất, bụi và hạt dưới size. Hạt đạt đi trên băng tải trong phòng kín, lên hệ thống máy inox để vào bước lựa và kiểm tra.",
+        en: "A vibration sieve removes impurities, dust, and undersize kernels. Passed nuts travel on a conveyor inside the closed room, up into the stainless-steel line for sorting and inspection.",
+      },
+    },
+    {
+      image: "/process/01-select.jpg",
+      title: { vi: "Nam châm, hút tạp chất và lựa tay", en: "Magnet, suction, and hand sorting" },
+      body: {
+        vi: "Hạt đi qua nam châm và hệ hút để tách dị vật từ tính, bụi và tạp chất. Trên băng chuyền, từng hạt được nhìn và nhặt bằng tay. Công nhân đội lưới tóc, khẩu trang và găng. Hạt vỡ, xỉn màu hoặc không đạt được tách riêng. QC kiểm tra lại vật lý và độ ẩm sau bước này. Lô không đạt quay lại phân loại, không đưa qua máy dò.",
+        en: "Kernels pass a magnet and a suction system to remove magnetic matter, dust, and impurities. On the belt, every nut is looked at and picked by hand. Selectors wear hairnets, masks, and gloves. Broken, dull, or off-spec kernels are taken out. QC then checks physical condition and moisture again. A failed lot goes back to sorting and does not go through the detectors.",
       },
     },
     {
       image: "/process/03-xray.jpg",
-      title: { vi: "Sàng lọc thêm bằng máy X-ray", en: "Screened again by X-ray" },
+      title: { vi: "Máy dò tạp chất và kim loại", en: "Foreign-body and metal detection" },
       body: {
-        vi: "Trước khi vào bao, hạt đi qua hệ thống soi X-ray. Máy đọc từng hạt và chỉ cho lô đi tiếp khi kết quả đạt. Đây là lớp kiểm tra thêm để phát hiện dị vật và giữ an toàn thực phẩm.",
-        en: "Before bagging, kernels pass through an X-ray inspection system. The machine reads the nuts and lets the lot continue only when the result is acceptable. This extra check looks for foreign matter and protects food safety.",
+        vi: "Máy X-ray là điểm kiểm soát CCP1. Máy đọc từng hạt và loại gốm, kính, cao su và thép. Ngay sau đó, máy dò kim loại (CCP2) loại sắt, kim loại không từ và thép không gỉ. Lô không đạt thì không vào bao.",
+        en: "The X-ray is control point CCP1. It reads each kernel and removes ceramic, glass, rubber, and steel. Immediately after, the metal detector (CCP2) removes iron, non-ferrous metal, and stainless steel. A failed lot is not bagged.",
       },
     },
     {
       image: "/process/04-fill.jpg",
-      title: { vi: "Đưa hạt vào bao trên máy đóng", en: "Kernels are filled into the pack" },
+      title: { vi: "Bao PE, nitơ và CO2", en: "PE bag, nitrogen, and CO2" },
       body: {
-        vi: "Hạt từ phễu đi xuống bao theo dòng ổn định. Công nhân theo sát miệng bao, chỉnh dòng hạt và không để hạt rơi ra ngoài. Mỗi bao được chuẩn bị đúng khối lượng trước khi đóng kín.",
-        en: "Kernels drop from the hopper into the pack in a steady stream. An operator watches the mouth of the pack, guides the flow, and keeps nuts from spilling. Each pack is brought to the right weight before it is closed.",
+        vi: "Hạt từ phễu chảy vào bao PE. Công nhân canh miệng bao cho đúng dòng và đúng khối lượng. Bao được bơm nitơ và CO2 trước khi hút chân không.",
+        en: "Kernels drop from the hopper into a PE bag. An operator watches the mouth of the bag so the flow and the weight stay right. Nitrogen and CO2 are added before the bag is vacuumed.",
       },
     },
     {
       image: "/process/05-pack.jpg",
-      title: { vi: "Đóng kín thành khối xuất khẩu", en: "Closed into an export block" },
+      title: { vi: "Hút chân không và hàn nhiệt", en: "Vacuum and heat-seal" },
       body: {
-        vi: "Hạt được hút chặt thành khối trong bao lót thùng, đúng dạng hàng xuất khẩu. Khối hạt đều giúp thùng đầy, chắc và giữ phẩm chất trên đường đi xa. Thùng carton được chuẩn bị sẵn ngay cạnh máy.",
-        en: "Kernels are drawn tight into a block inside the carton liner, the form used for export. An even block fills the carton, keeps it firm, and protects quality on a long journey. Cartons are prepared beside the machine.",
+        vi: "Bao PE được hút chặt và hàn nhiệt thành khối. Khối hạt đều, đúng dạng hàng xuất, để thùng đầy và chắc trên đường đi.",
+        en: "The PE bag is drawn tight and heat-sealed into a block. An even block is the export form. It fills the carton and keeps it firm in transit.",
       },
     },
     {
       image: "/process/06-seal.jpg",
-      title: { vi: "Niêm phong thùng và dán nhãn", en: "Cartons are sealed and labeled" },
+      title: { vi: "Đóng thùng, dán nhãn và lưu kho", en: "Carton, label, and storage" },
       body: {
-        vi: "Từng thùng được đóng nắp, dán nhãn lô và kiểm tra trước khi xếp chồng. Nhãn ghi loại hạt và ký hiệu bảo quản, để khách đối chiếu đúng kiện khi nhận hàng. Thùng đạt được xếp ngay ngắn, sẵn sàng xuất kho.",
-        en: "Each carton is closed, labeled with the lot, and checked before it is stacked. The label shows the grade and the handling marks, so the buyer can match the carton on arrival. Accepted cartons are stacked neatly and are ready to leave the warehouse.",
+        vi: "Từng thùng carton được đóng nắp và dán nhãn lô. Nhãn ghi loại hạt để đối chiếu đúng kiện khi nhận hàng. Thùng đạt được xếp cuối chuyền, lưu kho cách tường 20 cm để hàng không tựa tường và dễ kiểm tra trước khi xuất.",
+        en: "Each carton is closed and labeled with the lot. The label shows the grade so the carton can be matched on arrival. Accepted cartons are stacked at the end of the line and stored 20 cm from the wall, so the goods stay off the wall and can be checked before export.",
       },
     },
   ],
@@ -389,9 +581,12 @@ export const ui = {
   quickView: { vi: "Xem nhanh", en: "Quick view" },
   contactPrice: { vi: "Giá bán: Liên hệ", en: "Price: on request" },
   kernels: { vi: "Hạt điều nhân", en: "Cashew kernels" },
-  kernelTag: { vi: "Hạt Điều Hoàng Minh Cashew – chất lượng trong từng sản phẩm", en: "Hoang Minh Cashew – quality in every product" },
-  packingTitle: { vi: "Quy trình đóng gói", en: "Packing process" },
-  seeProcess: { vi: "Xem quy trình đóng gói", en: "See the packing process" },
+  kernelTag: {
+    vi: "Hạt Điều Hoàng Minh Cashew – chất lượng trong từng sản phẩm",
+    en: "Hoang Minh Cashew – quality in every product",
+  },
+  packingTitle: { vi: "Quy trình sản xuất", en: "Production process" },
+  seeProcess: { vi: "Xem quy trình sản xuất", en: "See the production process" },
   certTitle: { vi: "Chứng nhận tiêu chuẩn", en: "Certificates" },
   newsletter: { vi: "Đăng ký nhận tin", en: "Newsletter" },
   newsletterHint: {
@@ -403,18 +598,21 @@ export const ui = {
   name: { vi: "Họ và tên", en: "Name" },
   phone: { vi: "Điện thoại", en: "Phone" },
   message: { vi: "Nội dung", en: "Message" },
-  hotline: { vi: "Hotline", en: "Hotline" },
+  hotline: { vi: "Điện thoại", en: "Phone" },
   orderAdvice: { vi: "Tư vấn đặt hàng", en: "Order advice" },
   address: { vi: "Địa chỉ", en: "Address" },
+  website: { vi: "Website", en: "Website" },
   updated: { vi: "Nội dung đang cập nhật.", en: "Content is being updated." },
   process: { vi: "Quy trình sản xuất", en: "Production process" },
   nutritionTitle: { vi: "Dinh dưỡng", en: "Nutrition" },
   specs: { vi: "Thông số", en: "Specifications" },
   related: { vi: "Sản phẩm khác", en: "Other products" },
-  founded: { vi: "Thành lập", en: "Founded" },
   marketsTitle: { vi: "Thị trường xuất khẩu", en: "Export markets" },
-  aboutTitle: { vi: "Giới thiệu về Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "About Hoang Minh Cashew Import Export Co., Ltd." },
-  drying: { vi: "Quy trình phơi khô hạt điều", en: "Cashew drying process" },
+  aboutTitle: {
+    vi: "Giới thiệu về Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew",
+    en: "About Hoang Minh Cashew Import Export Co., Ltd.",
+  },
+  factoryTitle: { vi: "Nhà máy", en: "Factory" },
   placeholder: { vi: "Ảnh minh họa", en: "Illustration" },
 };
 

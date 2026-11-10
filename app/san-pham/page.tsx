@@ -18,7 +18,7 @@ export default function ProductsPage() {
               alt={t(product.name)}
               width={540}
               height={540}
-              className="h-48 w-full bg-white object-cover"
+              className="h-48 w-full bg-white object-contain"
             />
             <div className="p-4">
               <h2 className="text-lg font-semibold">{t(product.name)}</h2>

@@ -31,7 +31,7 @@ export default function ProductPage() {
         alt={t(product.name)}
         width={540}
         height={540}
-        className="mt-6 h-72 w-full rounded-3xl bg-white object-contain"
+        className="mt-6 h-72 w-full rounded-3xl bg-sand object-contain"
       />
       <p className="mt-6 leading-8">{t(productShared.nutrition)}</p>
       <p className="mt-4 leading-8">{t(product.detail)}</p>

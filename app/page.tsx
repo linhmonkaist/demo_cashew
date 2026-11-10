@@ -6,6 +6,7 @@ import { asset } from "@/lib/asset";
 import { NewsletterForm } from "@/components/forms";
 import {
   certificates,
+  company,
   intro,
   packingProcess,
   products,
@@ -25,7 +26,7 @@ export default function HomePage() {
               {t({ vi: "Giới thiệu về", en: "Introduction to" })}
             </p>
             <h1 className="mt-2 text-4xl font-bold leading-tight text-ink md:text-5xl">
-              {t({ vi: "Công ty TNHH Xuất Nhập Khẩu Hoàng Minh Cashew", en: "Hoang Minh Cashew Import Export Co., Ltd." })}
+              {t(company.name)}
             </h1>
             <p className="mt-5 text-base leading-7 text-muted">{t(intro)}</p>
             <Link href="/gioi-thieu" className="mt-6 inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white">
@@ -54,7 +55,7 @@ export default function HomePage() {
                   alt={t(product.name)}
                   width={540}
                   height={540}
-                  className="h-48 w-full bg-white object-cover"
+                  className="h-48 w-full bg-white object-contain"
                 />
                 <div className="p-4">
                   <h3 className="font-semibold">{t(product.name)}</h3>
@@ -73,14 +74,14 @@ export default function HomePage() {
           <p className="mx-auto mt-3 max-w-3xl text-center leading-7 text-muted">{t(packingProcess.lead)}</p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {packingProcess.steps.map((step) => (
-              <Link key={step.image} href="/bao-bi" className="overflow-hidden rounded-3xl border border-black/5 bg-white">
+              <Link key={step.image} href="/quy-trinh-san-xuat" className="overflow-hidden rounded-3xl border border-black/5 bg-white">
                 <img src={asset(step.image)} alt={t(step.title)} width={1600} height={900} className="h-40 w-full object-cover" />
                 <p className="p-4 text-sm font-semibold">{t(step.title)}</p>
               </Link>
             ))}
           </div>
           <div className="mt-8 text-center">
-            <Link href="/bao-bi" className="inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white">
+            <Link href="/quy-trinh-san-xuat" className="inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white">
               {t(ui.seeProcess)}
             </Link>
           </div>
@@ -91,7 +92,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-center text-3xl font-bold">{t(ui.certTitle)}</h2>
           <p className="mt-2 text-center text-brand-dark">{t(ui.kernelTag)}</p>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
             {certificates.map((item) => (
               <Link key={item.title} href="/chung-nhan" className="rounded-3xl bg-white p-5 shadow-sm">
                 {item.image ? (
